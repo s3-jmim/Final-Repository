@@ -1,5 +1,5 @@
 ******# Final-Repository**************
-
+--
 **Lab 3: Finding Homologs with BLAST**
 
 Clone Repository
@@ -44,7 +44,7 @@ bash
 blastp -db ../allprotein.fas -query NP_003381.1.fa -outfmt "6 sseqid pident length mismatch gapopen evalue bitscore pident stitle" -max_hsps 1 -out Mygene.blastp.detail.out
 ```
 
-It helps dentify homologous protein sequences in the database of interest NP_003381.1
+It helps identify homologous protein sequences in the database of interest NP_003381.1
 
 Filter High-Scoring Matches
 bash
@@ -63,6 +63,8 @@ grep -o -E "^[A-Z]\.[a-z]+" Mygene.blastp.detail.filtered.out | sort | uniq -c
 ```
 
 The purpose of the lab was to identify the homologous sequences of the starting protein and perform BLAST searches. 
+
+
 ---
 
 **Lab 4: Gene Family Sequence Alignment**
@@ -122,7 +124,9 @@ bash
 ```
 nw_display -w 1000 -b 'opacity:0' -s ~/lab05-$MYGIT/Mygene/Mygene.homologsf.al.mid.treefile.svg
 ```
+
 The purpose of Lab 5 is to construct a phylogenetic tree that is based on the alignment constructed in Lab 4 and shows the evolutionary relationships, divergence events, and patterns of gene evolution using maximum likelihood. 
+
 
 --
 **Lab 6: Gene and Species Tree Reconciliation**
