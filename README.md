@@ -12,16 +12,19 @@ git clone https://github.com/Bio312/FinalRepository-$MYGIT
 Create Working Directory
 
 bash
+
 ```
 mkdir ~/lab03-$MYGIT/Mygene
 ```
 bash
+
 ```
 cd ~/lab03-$MYGIT/Mygene
 ```
 
 Download Query Sequence
 bash
+
 ```
 ncbi-acc-download -F fasta -m protein "NP_003381.1"
 ```
@@ -29,21 +32,23 @@ ncbi-acc-download -F fasta -m protein "NP_003381.1"
 Perform BLAST Search
 Typical output:
 bash
+
 ```
 blastp -db ../allprotein.fas -query NP_003381.1.fa -outfmt 0 -max_hsps 1 -out Mygene.blastp.typical.out
 ```
 
 Tabular output:
 bash
+
 ```
 blastp -db ../allprotein.fas -query NP_003381.1.fa -outfmt "6 sseqid pident length mismatch gapopen evalue bitscore pident stitle" -max_hsps 1 -out Mygene.blastp.detail.out
 ```
 
 It helps dentify homologous protein sequences in the database of interest NP_003381.1
-```
 
 Filter High-Scoring Matches
 bash
+
 ```
 awk '{if ($6< 1e-30)print $1 }' Mygene.blastp.detail.out > Mygene.blastp.detail.filtered.out
 ```
@@ -52,6 +57,7 @@ This code helps to retain only high-confidence homologs based on e-value which i
 
 Count Paralogs per Species
 bash
+
 ```
 grep -o -E "^[A-Z]\.[a-z]+" Mygene.blastp.detail.filtered.out | sort | uniq -c
 ```
@@ -63,6 +69,7 @@ The purpose of the lab was to identify the homologous sequences of the starting 
 
 Filter and Extract Homologs
 bash
+
 ```
 seqkit grep --pattern-file ~/lab03-$MYGIT/Mygene/Mygene.blastp.detail.filtered.out ~/lab03-$MYGIT/allprotein.fas | seqkit grep -v -p "carpio" > ~/lab04-$MYGIT/Mygene/Mygene.homologs.fas
 ```
@@ -70,12 +77,14 @@ This bash will help extract and refine the homologous sequences to further the a
 
 Align Sequences
 bash
+
 ```
 muscle -align ~/lab04-$MYGIT/Mygene/Mygene.homologs.fas -output ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas
 ```
 
 Visualize Alignment
 bash
+
 ```
 Rscript --vanilla ~/lab04-$MYGIT/plotMSA.R ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas
 ```
@@ -88,12 +97,14 @@ The purpose of Lab 4 was to align the homologous sequences which will help visua
 
 Prepare Alignment File
 bash
+
 ```
 sed 's/ /_/g' ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas | seqkit grep -v -r -p "dupelabel" > ~/lab05-$MYGIT/Mygene/Mygene.homologsf.al.fas
 ```
 
 Build Phylogenetic Tree
 bash
+
 ```
 iqtree -s ~/lab05-$MYGIT/Mygene/Mygene.homologsf.al.fas -bb 1000 -nt 2
 ```
