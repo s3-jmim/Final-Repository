@@ -62,7 +62,7 @@ bash
 grep -o -E "^[A-Z]\.[a-z]+" Mygene.blastp.detail.filtered.out | sort | uniq -c
 ```
 
-The purpose of the lab was to identify the homologous sequences of the starting protein and perform BLAST searches. 
+The purpose of the lab 3 was to identify the homologous sequences of the starting protein and perform BLAST searches. 
 
 
 ---
@@ -93,6 +93,8 @@ Rscript --vanilla ~/lab04-$MYGIT/plotMSA.R ~/lab04-$MYGIT/Mygene/Mygene.homologs
 This code helps to visualize the alignment of NP_003381.1
 
 The purpose of Lab 4 was to align the homologous sequences which will help visualize and identify the conserved regions. 
+
+
 --
 
 **Lab 5: Gene Family Phylogeny using IQ-TREE**
