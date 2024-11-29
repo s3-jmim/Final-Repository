@@ -1,0 +1,451 @@
+    1  ls()
+    2  ls
+    3  sudo yum install R
+    4  R --vanilla
+    5  wget https://github.com/rcedgar/muscle/releases/download/v5.2/muscle-linux-x86.v5.2
+    6  ls
+    7  chmod +x muscle-linux-x86.v5.2
+    8  sudo cp muscle-linux-x86.v5.2 /usr/bin/muscle
+    9  muscle
+   10  ls
+   11  rm muscle-linux-x86.v5.2 
+   12  sudo yum install iqtree
+   13   wget https://github.com/iqtree/iqtree2/releases/download/v2.3.6/iqtree-2.3.6-Linux-intel.tar.gz
+   14  gunzip iqtree-2.3.6-Linux-intel.tar.gz
+   15  tar -xvf iqtree-2.3.6-Linux-intel.tar
+   16  ls
+   17  cd iqtree-2.3.6-Linux-intel/
+   18  ls
+   19  cd bin
+   20  sudo cp iqtree2 /usr/bin/iqtree
+   21  cd
+   22  iqtree
+   23  ls
+   24  rm iqtree*
+   25  rm -rf iqtre*
+   26  ls
+   27  R --vanilla
+   28  sudo R --vanilla
+   29  ls
+   30  tmux
+   31  sudo yum install tmux
+   32  mamba
+   33  conda
+   34  curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+   35  bash Miniforge3-$(uname)-$(uname -m).sh
+   36  ls
+   37  sudo bash Miniforge3-$(uname)-$(uname -m).sh
+   38  exit
+   39  mamba
+   40  nano .bashrc
+   41  exit
+   42  mamba
+   43  mamba install -c bioconda spades
+   44  mamba install -c bioconda sickle-trim
+   45  sudo mamba install -c bioconda sickle-trim
+   46  conda init --reverse --dry-run
+   47  conda init --reverse
+   48  CONDA_BASE_ENVIRONMENT=$(conda info --base)
+   49  echo The next command will delete all files in ${CONDA_BASE_ENVIRONMENT}
+   50  # Warning, the rm command below is irreversible!
+   51  # check the output of the echo command above
+   52  # To make sure you are deleting the correct directory
+   53  rm -rf ${CONDA_BASE_ENVIRONMENT}
+   54  conda init --reverse --dry-run
+   55  conda init --reverse
+   56  CONDA_BASE_ENVIRONMENT=$(conda info --base)
+   57  echo The next command will delete all files in ${CONDA_BASE_ENVIRONMENT}
+   58  sudo rm -rf ${CONDA_BASE_ENVIRONMENT}
+   59  sudo rm -f "${HOME}/.condarc"
+   60  sudo rm -fr ${HOME}/.conda
+   61  exit
+   62  ls
+   63  bash Miniforge3-$(uname)-$(uname -m).sh
+   64  exit
+   65  sudo dnf install xorg-x11-xauth -y
+   66  touch ~/.Xauthority
+   67  sudo chown bio312-user:bio312-user ~/.Xauthority
+   68  chmod 600 ~/.Xauthority
+   69  exit
+   70  mamba
+   71  ls /usr/bin/miniforge*
+   72  mamba install -c bioconda spades
+   73  mamba install -c bioconda sickle-trim
+   74  sickle
+   75  mamba install bioconda::pargenes
+   76  mamba create -n pargenes-env python=3.8
+   77  conda activate pargenes-env
+   78  mamba install bioconda::pargenes
+   79  sudo amazon-linux-extras install java-openjdk11 -y
+   80  sudo yum install java-openjdk11 -y
+   81  sudo yum install xclock xterm
+   82  xclock
+   83  sudo dnf install java-11-openjdk -y
+   84  source deactivate
+   85  mamba deactivate
+   86  sudo dnf install java-11-openjdk -y
+   87  sudo dnf install xorg-x11-server-Xorg xorg-x11-xauth xorg-x11-apps -y
+   88  sudo dnf install xterm -y
+   89  java -version
+   90  sudo dnf install xeyes -y
+   91  sudo dnf install xclock -y
+   92  sudo dnf install epel-release -y
+   93  sudo dnf install xorg-x11-utils -y
+   94  mamba install -c bioconda igvtools
+   95  xclock &
+   96  ls
+   97  cd miniforge3/
+   98  ls
+   99  cd bin
+  100  ls
+  101  ls igv*
+  102  cd igvtools
+  103  cd
+  104  ls
+  105  mkdir tools
+  106  cd tools
+  107  wget https://data.broadinstitute.org/igv/projects/downloads/2.16/IGV_Linux_2.16.2_WithJava.zip
+  108  unzip IGV_Linux_2.16.2_WithJava.zip
+  109  cd
+  110  bash ~/tools/IGV_Linux_2.16.2/igv.sh
+  111  sudo nano /etc/ssh/sshd_config
+  112  sudo systemctl restart sshd
+  113  gcc --version
+  114  ls
+  115  git clone --recursive https://github.com/BenoitMorel/AleRax
+  116  exit
+  117  sudo dnf install xorg-x11-xauth -y
+  118  echo $DISPLAY
+  119  export DISPLAY=:10.0  # Adjust the display number if necessary
+  120  xterm &
+  121  bash ~/tools/IGV_Linux_2.16.2/igv.sh
+  122  sudo dnf search x11
+  123  sudo dnf search xclock
+  124  sudo dnf search xterm
+  125  sudo dnf install xorg-x11-server-utils xorg-x11-apps -y
+  126  sudo dnf install xorg-x11-server-Xvfb -y
+  127  Xvfb :99 -screen 0 1024x768x16 &
+  128  export DISPLAY=:99
+  129  bash ~/tools/IGV_Linux_2.16.2/igv.sh
+  130  wkhtmltopdf --version
+  131  exit
+  132  wkhtmltopdf --version
+  133  exit
+  134  exit
+  135  echo "bio312isCOOL!" | sudo -S sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config && sudo systemctl restart sshd.service
+  136  tmux
+  137  cd ~/lab02-$MYGIT
+  138  ncbi-acc-download -h
+  139  ncbi-acc-download -F genbank "NW_003143794.1"
+  140  ls
+  141  less NW_003143794.1.gbk
+  142  ls
+  143  cd lab02-s3-jmim
+  144  MYGIT="s2-cdarwin"
+  145  MYGIT="s2-jmim
+  146  echo $MYGIT
+  147  tmux
+  148  less NW_003143794.1.fa
+  149  more NW_003143794.1.fa
+  150  tmux
+  151  cd
+  152  ncbi-acc-download -F fasta "NW_003143794.1"
+  153  more NW_003143794.1
+  154  more NW_003143794.1.fa
+  155  gt gff3 -sort -tidy -force -o LOC100375093.sorted.gff LOC100375093.X1.gff
+  156  gt stat -genelengthdistri -exonlengthdistri -intronlengthdistri -cdslengthdistri -addintrons -force -o LOC100375093.sorted.counts.gff LOC100375093.sorted.gff
+  157  less LOC100375093.sorted.counts.gff
+  158  git clone https://github.com/Bio312/lab02-s3-jmim
+  159  ls
+  160  tmux
+  161  git config --global user.email "jannatul.mim@stonybrook.edu"
+  162  git config --global lab02-s3-jmim "JANNATUL"
+  163  git add .
+  164  git status
+  165  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  166  git user.email "jannatul.mim@stonybrook.edu"
+  167  git config --global user.email "jannatul.mim@stonybrook.edu"
+  168  git config --global user.name "JANNATUL"
+  169  git add .
+  170  git status
+  171  less NW_003143794.1.counts.txt
+  172  gt gff3 -sort -tidy -o NW_003143794.1.sorted.gff NW_003143794.1.gff
+  173  gt stat -genelengthdistri -exonlengthdistri -intronlengthdistri -cdslengthdistri -addintrons -force -o NW_003143794.1.counts.txt NW_003143794.1.sorted.gff
+  174  less NW_003143794.1.counts.txt
+  175  git clone https://github.com/Bio312/lab02-s3-jmim
+  176  ls
+  177  cs
+  178  cd
+  179  echo 'Hello World'
+  180  MYGIT="s2-jmim"
+  181  echo $MYGIT
+  182  echo my git username is $MYGIT
+  183  echo "export MYGIT=$MYGIT" >> ~/.bashrc
+  184   echo "”.devlove ,gnieb era dna ,neeb evah lufrednow tsom dna lufituaeb tsom smrof sseldne gninnigeb a elpmis os morf ,ytivarg fo wal dexif eht ot gnidrocca no gnilcyc enog sah tenalp siht tslihw ,taht dna ;eno otni ro smrof wef a otni dehtaerb yllanigiro neeb gnivah ,srewop lareves sti htiw ,efil fo weiv siht ni ruednarg si erehT“" | rev
+  185  cd
+  186  pwd
+  187  cd data
+  188  ls
+  189  cat animal.txt
+  190  cd
+  191  df
+  192  df -h
+  193  cd ~/lab02-$MYGIT
+  194  ncbi-acc-download -h
+  195  ncbi-acc-download -F genbank "NW_003143794.1"
+  196  ls
+  197  less NW_003143794.1.gbk
+  198  ncbi-acc-download -F fasta "NW_003143794.1"
+  199  ncbi-acc-download -F gff3 "NW_003143794.1"
+  200  git clone https://github.com/Bio312/lab02-s3-jmim
+  201  git clonehttps://github.com/Bio312/lab02-s3-jmim 
+  202  git clone https://github.com/Bio312/lab02-s3-jmim
+  203  ncbi-acc-download -F gff3 "NW_003143794.1"
+  204  filterGFF LOC100375093 NW_003143794.1.gff
+  205  ```bash
+  206  gt gff3 -sort -tidy -force -o LOC100375093.sorted.gff LOC100375093.X1.gff
+  207  ```
+  208  git clone https://github.com/Bio312/lab02-s3-jmim
+  209  1s
+  210  ls
+  211  cd lab02-s3-jmim
+  212  echo 'Hello World'
+  213  MYGIT="s2-jmim"
+  214  echo $MYGIT
+  215   echo "”.devlove ,gnieb era dna ,neeb evah lufrednow tsom dna lufituaeb tsom smrof sseldne gninnigeb a elpmis os morf ,ytivarg fo wal dexif eht ot gnidrocca no gnilcyc enog sah tenalp siht tslihw ,taht dna ;eno otni ro smrof wef a otni dehtaerb yllanigiro neeb gnivah ,srewop lareves sti htiw ,efil fo weiv siht ni ruednarg si erehT“" | rev
+  216  cd
+  217  cd data
+  218  ls
+  219  cat animal.txt
+  220  cd
+  221  df
+  222  df-h
+  223  cd ~/lab02-$MYGIT
+  224  cd
+  225  pwd
+  226  cd data
+  227  ls
+  228  anima.txt
+  229  cat animal.txt
+  230  cd
+  231  df
+  232  df -h
+  233  cd ~/lab02-$MYGIT
+  234  gt gff3 -sort -tidy -force -o LOC100375093.sorted.gff LOC100375093.X1.gff
+  235  gt stat -genelengthdistri -exonlengthdistri -intronlengthdistri -cdslengthdistri -addintrons -force -o LOC100375093.sorted.counts.gff LOC100375093.sorted.gff
+  236  less LOC100375093.sorted.counts.gff
+  237  gt gff3 -sort -tidy -o NW_003143794.1.sorted.gff NW_003143794.1.gff
+  238  gt stat -genelengthdistri -exonlengthdistri -intronlengthdistri -cdslengthdistri -addintrons -force -o NW_003143794.1.counts.txt NW_003143794.1.sorted.gff
+  239  less NW_003143794.1.counts.txt
+  240  grep CDS LOC100375093.X1.gff > LOC100375093.X1.cds.gff
+  241  bedtools getfasta -s -fi NW_003143794.1.fa -fo LOC100375093.X1.cds.fa -bed LOC100375093.X1.cds.gff
+  242  less LOC100375093.X1.cds.fa
+  243  union LOC100375093.X1.cds.fa -outseq LOC100375093.X1.cds.union.fa
+  244  transeq LOC100375093.X1.cds.union.fa LOC100375093.X1.protein.fa
+  245  less LOC100375093.X1.protein.fa
+  246  git config --global user.email "JANNATUL.MIM@STONYBROOK.EDU"
+  247  git config --global s3-jmim "JANNATUL"
+  248  git config --global user.email "JANNATUL.MIM@STONYBROOK.EDU"
+  249  git config --global s2-jmim "JANNATUL"
+  250  history > lab2.commandhistory.txt
+  251  git status
+  252  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore
+  253  awk '!NF || !seen[$0]++' .gitignore
+  254  git add .
+  255  git clone https://github.com/Bio312/lab02-s3-jmim
+  256  git clone https://github.com/Bio312/lab03-s3-jmim
+  257  cd ~/lab03-$MYGIT
+  258  ls
+  259  lab03-s3-jmim/
+  260  cd lab03-s3-jmim/
+  261  cd ~/lab03-$MYGIT
+  262  MYGIT="s3-jmim"
+  263  echo $MYGIT
+  264  echo "export MYGIT=$MYGIT" >> ~/.bashrc
+  265  cd ~/lab03-$MYGIT
+  266  gunzip proteomes/*.gz
+  267  cat  proteomes/*.faa > allprotein.fas
+  268  makeblastdb -in allprotein.fas -dbtype prot
+  269  mkdir ~/lab03-$MYGIT/globins
+  270  cd ~/lab03-$MYGIT/globins
+  271  pwd
+  272  ncbi-acc-download -F fasta -m protein "NP_000549.1"
+  273  blastp -db ../allprotein.fas -query NP_000549.1.fa -outfmt 0 -max_hsps 1 -out globins.blastp.typical.out
+  274  less globins.blastp.typical.out
+  275  blastp -db ../allprotein.fas -query NP_000549.1.fa  -outfmt "6 sseqid pident length mismatch gapopen evalue bitscore pident stitle"  -max_hsps 1 -out globins.blastp.detail.out
+  276  ncbi-acc-download -F fasta -m protein "NP_000549.1"
+  277  blastp -db ../allprotein.fas -query NP_000549.1.fa -outfmt 0 -max_hsps 1 -out globins.blastp.typical.out
+  278  ncbi-acc-download -F fasta -m protein "NP_000549.1"
+  279  ls
+  280  pwd
+  281  cd ~/lab03-$MYGIT/globins
+  282  ls
+  283  blastp -db ../allprotein.fas -query NP_000549.1.fa  -outfmt "6 sseqid pident length mismatch gapopen evalue bitscore pident stitle"  -max_hsps 1 -out globins.blastp.detail.out
+  284  less -Sglobins.blastp.detail.out
+  285  less -s
+  286  less
+  287  less -S globins.blastp.detail.out
+  288  grep -c H.sapiens globins.blastp.detail.out
+  289  awk '{if ($6< 1e-30)print $1 }' globins.blastp.detail.out > globins.blastp.detail.filtered.out
+  290  awk '{if ($6 < 1e-15) print $1 }' globins.blastp.detail.out > globins.blastp.detail.filtered.out
+  291  wc -l globins.blastp.detail.filtered.out
+  292  grep -o -E "^[A-Z]\.[a-z]+" globins.blastp.detail.filtered.out  | sort | uniq -c
+  293  awk '{if ($6< 1e-30)print $1 }' globins.blastp.detail.out > globins.blastp.detail.filtered.out
+  294  wc -l globins.blastp.detail.filtered.out
+  295  wc -l globins.blastp.detail.out
+  296  grep -o -E "^[A-Z]\.[a-z]+" globins.blastp.detail.filtered.out  | sort | uniq -c
+  297  mkdir ~/lab03-$MYGIT/Mygene
+  298  cd ~/lab03-$MYGIT/Mygene
+  299  ncbi-acc-download -F fasta -m protein "NP_003381.1"
+  300  blastp -db ../allprotein.fas -query NP_003381.1.fa -outfmt 0 -max_hsps 1 -out globins.blastp.typical.out
+  301  less -S Mygene.blastp.typical.out
+  302  blastp -db ../allprotein.fas -query NP_003381.1.fa -outfmt 0 -max_hsps 1 -out Mygene.blastp.typical.out
+  303  less -S Mygene.blastp.typical.out
+  304  wc -l Mygene.blastp.detail.filtered.out
+  305  less -S Mygene.blastp.typical.out
+  306  wc -l Mygene.blastp.detail.filtered.out
+  307  ls
+  308  blastp -db ../allprotein.fas -query NP_003381.1.fa  -outfmt "6 sseqid pident length mismatch gapopen evalue bitscore pident stitle"  -max_hsps 1 -out Mygene.blastp.detail.out
+  309   wc -l Mygene.blastp.detail.filtered.out
+  310  grep -c H.sapiens Mygene.blastp.detail.out
+  311  awk '{if ($6< 1e-30)print $1 }' Mygene.blastp.detail.out > Mygene.blastp.detail.filtered.out
+  312  wc -l Mygene.blastp.detail.filtered.out
+  313  grep -o -E "^[A-Z]\.[a-z]+" Mygene.blastp.detail.filtered.out  | sort | uniq -c
+  314  cd ~/lab03-$MYGIT
+  315    history > ~/lab03-$MYGIT/lab3.commandhistory.txt
+  316  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  317  git add .
+  318  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  319  git pull --rebase=false --no-edit
+  320  git push 
+  321  git push
+  322  git clone https://github.com/Bio312/lab03-s3-jmim/tree/master
+  323  pwd
+  324  cd ~/lab03-$MYGIT/Mygene
+  325  pwd
+  326  blastp -db ../allprotein.fas -query NP_003381.1.fa -outfmt 0 -max_hsps 1 -out Mygene.blastp.typical.out
+  327  blastp -db ../allprotein.fas -query NP_003381.1.fa  -outfmt "6 sseqid pident length mismatch gapopen evalue bitscore pident stitle"  -max_hsps 1 -out Mygene.blastp.detail.out
+  328  less S- Mygene.blastp.detail.out
+  329  cd ~/lab03-$MYGIT/Mygenes
+  330  cd ~/lab03-$MYGIT/Mygene
+  331  pwd
+  332  ncbi-acc-download -F fasta -m protein "NP_003381.1"
+  333  less NP_003381.1.fa
+  334  blastp -db ../allprotein.fas -query NP_003381.1.fa -outfmt 0 -max_hsps 1 -out Mygene.blastp.typical.out
+  335  less Mygene.blastp.typical.out
+  336  blastp -db ../allprotein.fas -query NP_003381.1.fa  -outfmt "6 sseqid pident length mismatch gapopen evalue bitscore pident stitle"  -max_hsps 1 -out Mygene.blastp.detail.out
+  337  less -S Mygene.blastp.detail.out
+  338  grep -c H.sapiens Mygene.blastp.detail.out
+  339  awk '{if ($6< 1e-30)print $1 }' Mygene.blastp.detail.out > globins.blastp.detail.filtered.out
+  340  wc -lMygene.blastp.detail.filtered.out
+  341  wc-help
+  342  wc -l Mygene.blastp.detail.filtered.out
+  343  wc -l Mygene.blastp.detail.out
+  344  grep -o -E "^[A-Z]\.[a-z]+" Mygene.blastp.detail.filtered.out  | sort | uniq -c
+  345  awk '{if ($6< 1e-30)print $1 }' Mygene.blastp.detail.out > Mygene.blastp.detail.filtered.out
+  346  wc -lMygene.blastp.detail.filtered.out
+  347  wc -l Mygene.blastp.detail.filtered.out
+  348  grep -o -E "^[A-Z]\.[a-z]+" Mygene.blastp.detail.filtered.out  | sort | uniq -c
+  349  cd ~/lab03-$MYGIT
+  350   history > ~/lab03-$MYGIT/lab3.commandhistory.txt
+  351  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  352  git add .
+  353  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  354  git pull --rebase=false --no-edit
+  355  git push 
+  356  cd ~/lab03-$MYGIT
+  357    history > ~/lab03-$MYGIT/lab3.commandhistory.txt
+  358  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  359  git add .
+  360  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  361  git pull --rebase=false --no-edit
+  362  git push 
+  363  git clone https://github.com/Bio312/lab04-$MYGIT
+  364  cd lab04-$MYGIT
+  365  ls
+  366  mkdir ~/lab04-$MYGIT/globins
+  367  cd ~/lab04-$MYGIT/globins
+  368  pwd
+  369  less globins.homologs.fas
+  370  muscle -align ~/lab04-$MYGIT/globins/globins.homologs.fas -output ~/lab04-$MYGIT/globins/globins.homologs.al.fas
+  371  muscle -align ~/lab04-$MYGIT/Mygene/Mygene.homologs.fas -output ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas
+  372  muscle -align ~/lab04-$MYGIT/globins/globins.homologs.fas -output ~/lab04-$MYGIT/globins/globins.homologs.al.fas
+  373  alv -kli  ~/lab04-$MYGIT/globins/globins.homologs.al.fas | less -RS
+  374  alv -kli --majority ~/lab04-$MYGIT/globins/globins.homologs.al.fas | less -RS
+  375  alv -h
+  376   Rscript --vanilla ~/lab04-$MYGIT/plotMSA.R  ~/lab04-$MYGIT/globins/globins.homologs.al.fas
+  377  alignbuddy  -al  ~/lab04-$MYGIT/globins/globins.homologs.al.fas
+  378  alignbuddy -trm all  ~/lab04-$MYGIT/globins/globins.homologs.al.fas | alignbuddy  -al
+  379  alignbuddy -dinv 'ambig' ~/lab04-$MYGIT/globins/globins.homologs.al.fas | alignbuddy  -al
+  380  t_coffee -other_pg seq_reformat -in ~/lab04-$MYGIT/globins/globins.homologs.al.fas -output sim
+  381   alignbuddy -pi ~/lab04-$MYGIT/globins/globins.homologs.al.fas | awk ' (NR>2)  { for (i=2;i<=NF  ;i++){ sum+=$i;num++} }
+  382       END{ print(100*sum/num) } '
+  383  mkdir ~/lab04-$MYGIT/Mygene
+  384  cd ~/lab04-$MYGIT/Mygene
+  385  pwd
+  386  seqkit grep --pattern-file ~/lab03-$MYGIT/Mygene/Mygene.blastp.detail.filtered.out ~/lab03-$MYGIT/allprotein.fas | seqkit grep -v -p "carpio" > ~/lab04-$MYGIT/Mygene/Mygene.homologs.fas
+  387  muscle -align ~/lab04-$MYGIT/Mygene/Mygene.homologs.fas -output ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas
+  388  alv -kli  ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas | less -RS
+  389  alv -kli --majority ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas | less -RS
+  390   Rscript --vanilla ~/lab04-$MYGIT/plotMSA.R  ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas
+  391  Rscript --vanilla ~/lab04-$MYGIT/plotMSA.R  ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas
+  392  pwd
+  393  ls
+  394  Rscript --vanilla ~/lab04-$MYGIT/plotMSA.R  ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas
+  395  alignbuddy  -al  ~/lab04-$MYGIT/globins/Mygene.homologs.al.fas
+  396  alignbuddy  -al  ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas
+  397  alignbuddy -trm all  ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas | alignbuddy  -al
+  398  alignbuddy -dinv 'ambig' ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas | alignbuddy  -al
+  399  t_coffee -other_pg seq_reformat -in ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas -output sim
+  400   alignbuddy -pi ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas | awk ' (NR>2)  { for (i=2;i<=NF  ;i++){ sum+=$i;num++} }
+  401       END{ print(100*sum/num) } '
+  402  history > lab4.commandhistory.txt
+  403  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  404  git add .
+  405  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  406  git pull --rebase=false --no-edit
+  407  git push 
+  408  history > lab4.commandhistory.txt
+  409  cd ~/lab04-$MYGIT
+  410  find . -size +5M | sed 's|^\./||g' | cat >> .gitignore; awk '!NF || !seen[$0]++' .gitignore
+  411  git add .
+  412  git commit -a -m "Adding all new data files I generated in AWS to the repository."
+  413  git pull --rebase=false --no-edit
+  414  git push 
+  415  git clone https://github.com/Bio312/lab04-$MYGIT
+  416  cd lab04-$MYGIT
+  417  ls
+  418  pwd
+  419  nano ~/lab04-$MYGIT/toy.fas 
+  420  muscle -align ~/lab04-$MYGIT/toy.fas -output ~/lab04-$MYGIT/toy.al.fas
+  421  alv -kli  ~/lab04-$MYGIT/toy.al.fas 
+  422  t_coffee -other_pg seq_reformat -in ~/lab04-$MYGIT/toy.al.fas -output sim
+  423  ```bash
+  424   alignbuddy -pi ~/lab04-$MYGIT/toy.al.fas | awk ' (NR>2)  { for (i=2;i<=NF  ;i++){ sum+=$i;num++} }
+  425       END{ print(100*sum/num) } '
+  426   cd lab04-$MYGIT
+  427   cd lab04-$MYGIT
+  428  alignbuddy -pi ~/lab04-$MYGIT/toy.al.fas
+  429   alignbuddy -pi ~/lab04-$MYGIT/toy.al.fas | awk ' (NR>2)  { for (i=2;i<=NF  ;i++){ sum+=$i;num++} }
+  430       END{ print(100*sum/num) } '
+  431  pwd
+  432  /home/bio312-user/lab04-s3-jmim
+  433  mkdir ~/lab04-$MYGIT/globins
+  434  cd ~/lab04-$MYGIT/globins
+  435  pwd
+  436  seqkit grep --pattern-file ~/lab03-$MYGIT/globins/globins.blastp.detail.filtered.out ~/lab03-$MYGIT/allprotein.fas | seqkit grep -v -p "carpio" > ~/lab04-$MYGIT/globins/globins.homologs.fas
+  437  less - globins.homologs.fas
+  438  cd lab04-$MYGIT
+  439  cd ~/lab04-$MYGIT/Mygene
+  440  pwd
+  441  seqkit grep --pattern-file ~/lab03-$MYGIT/Mygene/Mygene.blastp.detail.filtered.out ~/lab03-$MYGIT/allprotein.fas | seqkit grep -v -p "carpio" > ~/lab04-$MYGIMygenenMygene.homologs.fas
+  442  muscle -align ~/lab04-$MYGIT/Mygene/Mygene.homologs.fas -output ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas
+  443  alv -kli  ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas | less -RS
+  444  alv -kli --majority ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas | less -RS
+  445  Rscript --vanilla ~/lab04-$MYGIT/plotMSA.R  ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas
+  446  alv -kil -w 100 ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas | aha > ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.html
+  447  ab04-$MYGIT/Mygene/Mygene.homologs.al.html -o ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.ps
+  448  a2ps -r --columns=1 ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.html -o ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.ps
+  449  ps2pdf ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.ps ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.pdf
+  450   Rscript --vanilla ~/lab04-$MYGIT/plotMSA.R  ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas
+  451  history > lab4.commandhistory.txt
