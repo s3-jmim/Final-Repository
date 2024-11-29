@@ -21,6 +21,20 @@ bash
 ```
 cd ~/lab03-$MYGIT/Mygene
 ```
+Uncompress Proteomes 
+
+bash 
+```
+gunzip proteomes/*.gz
+```
+Concatenate All protein sequences 
+
+bash 
+```
+cat proteomes/*.faa > allprotein.fas
+```
+It concatenates all protein sequence files into a single file called allprotein.fas 
+
 
 Download Query Sequence
 bash
@@ -49,6 +63,24 @@ blastp -db ../allprotein.fas -query NP_003381.1.fa -outfmt "6 sseqid pident leng
 ```
 
 It helps identify homologous protein sequences in the database of interest NP_003381.1
+
+View BLAST Tabular Output 
+
+bash 
+
+```
+less -S Mygene.blastp.detail.out
+```
+It views the BLAST tabular in scrollable horizontal format 
+
+Count the number of Human Hits 
+
+bash 
+
+```
+grep -c H.sapiens Mygene.blastp.detail.out
+```
+It counts the number of hits related to Homo sapiens 
 
 Filter High-Scoring Matches
 bash
@@ -312,20 +344,22 @@ Generate Domain Phylogeny
 
 bash
 ```
-cp ~/lab05-$MYGIT/globins/globins.homologsf.outgroupbeta.treefile ~/lab08-$MYGIT/globins
-Rscript --vanilla plotTreeAndDomains.r globins.homologsf.outgroupbeta.treefile globins.rps-blast.out globins.tree.rps.pdf
+cp ~/lab05-$MYGIT/Mygene/Mygene.homologsf.outgroupbeta.treefile ~/lab08-$MYGIT/Mygene
+Rscript --vanilla plotTreeAndDomains.r Mygene.homologsf.outgroupbeta.treefile Mygene.rps-blast.out Mygene.tree.rps.pdf
 ```
 It plots the phylogenetic tree and domain predictions to see the functional conservation. 
 
+R script to plot Domain on Tree:
 
-It is important to know how many paralogs are found in each species.
-
-bash
+bash 
 
 ```
-grep -o -E "^[A-Z]\.[a-z]+" Mygene.blastp.detail.filtered.out  | sort | uniq -c
+Rscript --vanilla ~/lab08-$MYGIT/plotTreeAndDomains.r ~/lab08-$MYGIT/Mygene/Mygene.homologsf.outgroupbeta.treefile ~/lab08-$MYGIT/Mygene/Mygene.rps-blast.out ~/lab08-$MYGIT/Mygene/Mygene.tree.rps.pdf
 ```
-It determines the number of paralogs in the identified homolog sequences. 
+
+It runs an R script of the Pfam domains and saves it asa  PDF 
+
+
 
 
 The purpose of Lab 8 is to identify and annotate protein domains within the homologous sequences of the gene family NP_003381.1. 
