@@ -92,6 +92,24 @@ Rscript --vanilla ~/lab04-$MYGIT/plotMSA.R ~/lab04-$MYGIT/Mygene/Mygene.homologs
 ```
 This code helps to visualize the alignment of NP_003381.1
 
+```
+alignbuddy  -al  ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas
+```
+
+```
+alignbuddy -trm all  ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas | alignbuddy  -al
+```
+```
+alignbuddy -dinv 'ambig' ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas | alignbuddy  -al
+```
+```
+t_coffee -other_pg seq_reformat -in ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas -output sim
+```
+```
+ alignbuddy -pi ~/lab04-$MYGIT/Mygene/Mygene.homologs.al.fas | awk ' (NR>2)  { for (i=2;i<=NF  ;i++){ sum+=$i;num++} }
+     END{ print(100*sum/num) } '
+```
+
 The purpose of Lab 4 was to align the homologous sequences which will help visualize and identify the conserved regions. 
 
 
