@@ -1,0 +1,1057 @@
+<recPhylo>
+  <spTree>
+    <phylogeny>
+      <clade>
+        <name>Gnathostomata</name>
+        <clade>
+          <name>Euteleostomi</name>
+          <clade>
+            <name>Tetrapoda</name>
+            <clade>
+              <name>Amniota</name>
+              <clade>
+                <name>Boreoeutheria</name>
+                <clade>
+                  <name>Laurasiatheria</name>
+                  <clade>
+                    <name>E.caballus</name>
+                  </clade>
+                  <clade>
+                    <name>F.catus</name>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>H.sapiens</name>
+                </clade>
+              </clade>
+              <clade>
+                <name>Sauria</name>
+                <clade>
+                  <name>Archelosauria</name>
+                  <clade>
+                    <name>G.gallus</name>
+                  </clade>
+                  <clade>
+                    <name>C.mydas</name>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>S.townsendi</name>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>X.laevis</name>
+            </clade>
+          </clade>
+          <clade>
+            <name>Clupeocephala</name>
+            <clade>
+              <name>Euteleosteomorpha</name>
+              <clade>
+                <name>G.aculeatus</name>
+              </clade>
+              <clade>
+                <name>S.salar</name>
+              </clade>
+            </clade>
+            <clade>
+              <name>D.rerio</name>
+            </clade>
+          </clade>
+        </clade>
+        <clade>
+          <name>C.carcharias</name>
+        </clade>
+      </clade>
+    </phylogeny>
+  </spTree>
+  <recGeneTree>
+    <phylogeny rooted="true">
+      <clade>
+        <name>n117</name>
+        <confidence>1.0</confidence>
+        <branch_length>1.0</branch_length>
+        <eventsRec>
+          <duplication speciesLocation="Gnathostomata"></duplication>
+        </eventsRec>
+        <clade>
+          <name>n95</name>
+          <confidence>1.0</confidence>
+          <branch_length>2.86833278955</branch_length>
+          <eventsRec>
+            <duplication speciesLocation="Gnathostomata"></duplication>
+          </eventsRec>
+          <clade>
+            <name>n65</name>
+            <confidence>1.0</confidence>
+            <branch_length>0.4780216591</branch_length>
+            <eventsRec>
+              <speciation speciesLocation="Gnathostomata"></speciation>
+            </eventsRec>
+            <clade>
+              <name>n63</name>
+              <confidence>1.0</confidence>
+              <branch_length>0.2108766974</branch_length>
+              <eventsRec>
+                <speciation speciesLocation="Euteleostomi"></speciation>
+              </eventsRec>
+              <clade>
+                <name>n47</name>
+                <confidence>1.0</confidence>
+                <branch_length>0.7248547846</branch_length>
+                <eventsRec>
+                  <speciation speciesLocation="Clupeocephala"></speciation>
+                </eventsRec>
+                <clade>
+                  <name>n45</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>0.0959698457</branch_length>
+                  <eventsRec>
+                    <speciation speciesLocation="Euteleosteomorpha"></speciation>
+                  </eventsRec>
+                  <clade>
+                    <name>S.salar_wee2_wee1like_protein_kinase_2</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>0.243651355</branch_length>
+                    <eventsRec>
+                      <leaf speciesLocation="S.salar" geneName="S.salar_wee2_wee1like_protein_kinase_2"></leaf>
+                    </eventsRec>
+                  </clade>
+                  <clade>
+                    <name>G.aculeatus_wee2_wee1like_protein_kinase_2_isoform_X2</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>0.4449757108</branch_length>
+                    <eventsRec>
+                      <leaf speciesLocation="G.aculeatus" geneName="G.aculeatus_wee2_wee1like_protein_kinase_2_isoform_X2"></leaf>
+                    </eventsRec>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>D.rerio_wee2_wee1like_protein_kinase_2_isoform_2</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>0.2696145615</branch_length>
+                  <eventsRec>
+                    <leaf speciesLocation="D.rerio" geneName="D.rerio_wee2_wee1like_protein_kinase_2_isoform_2"></leaf>
+                  </eventsRec>
+                </clade>
+              </clade>
+              <clade>
+                <name>n62</name>
+                <confidence>1.0</confidence>
+                <branch_length>0.1771644045</branch_length>
+                <eventsRec>
+                  <speciation speciesLocation="Tetrapoda"></speciation>
+                </eventsRec>
+                <clade>
+                  <name>n50</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>0.4589661796</branch_length>
+                  <eventsRec>
+                    <duplication speciesLocation="X.laevis"></duplication>
+                  </eventsRec>
+                  <clade>
+                    <name>X.laevis_wee2.L_wee1like_protein_kinase_2A</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>0.02828882</branch_length>
+                    <eventsRec>
+                      <leaf speciesLocation="X.laevis" geneName="X.laevis_wee2.L_wee1like_protein_kinase_2A"></leaf>
+                    </eventsRec>
+                  </clade>
+                  <clade>
+                    <name>X.laevis_wee2.S_wee1like_protein_kinase_2B</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>0.084983925</branch_length>
+                    <eventsRec>
+                      <leaf speciesLocation="X.laevis" geneName="X.laevis_wee2.S_wee1like_protein_kinase_2B"></leaf>
+                    </eventsRec>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>n61</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>0.2146099843</branch_length>
+                  <eventsRec>
+                    <speciation speciesLocation="Amniota"></speciation>
+                  </eventsRec>
+                  <clade>
+                    <name>n55</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>0.7274095655</branch_length>
+                    <eventsRec>
+                      <duplication speciesLocation="Boreoeutheria"></duplication>
+                    </eventsRec>
+                    <clade>
+                      <name>n53</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>0.0442245115</branch_length>
+                      <eventsRec>
+                        <speciation speciesLocation="Boreoeutheria"></speciation>
+                      </eventsRec>
+                      <clade>
+                        <name>r77</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <speciation speciesLocation="Laurasiatheria"></speciation>
+                        </eventsRec>
+                        <clade>
+                          <name>E.caballus_WEE2_wee1like_protein_kinase_2</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>0.0875158157</branch_length>
+                          <eventsRec>
+                            <leaf speciesLocation="E.caballus" geneName="E.caballus_WEE2_wee1like_protein_kinase_2"></leaf>
+                          </eventsRec>
+                        </clade>
+                        <clade>
+                          <name>F.catus*LOST</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>1.0</branch_length>
+                          <eventsRec>
+                            <loss speciesLocation="F.catus"></loss>
+                          </eventsRec>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>H.sapiens_WEE2_wee1like_protein_kinase_2</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>0.2021639596</branch_length>
+                        <eventsRec>
+                          <leaf speciesLocation="H.sapiens" geneName="H.sapiens_WEE2_wee1like_protein_kinase_2"></leaf>
+                        </eventsRec>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>r81</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <speciation speciesLocation="Boreoeutheria"></speciation>
+                      </eventsRec>
+                      <clade>
+                        <name>r79</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <speciation speciesLocation="Laurasiatheria"></speciation>
+                        </eventsRec>
+                        <clade>
+                          <name>F.catus_WEE2_wee1like_protein_kinase_2_isoform_X1</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>0.1012585025</branch_length>
+                          <eventsRec>
+                            <leaf speciesLocation="F.catus" geneName="F.catus_WEE2_wee1like_protein_kinase_2_isoform_X1"></leaf>
+                          </eventsRec>
+                        </clade>
+                        <clade>
+                          <name>E.caballus*LOST</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>1.0</branch_length>
+                          <eventsRec>
+                            <loss speciesLocation="E.caballus"></loss>
+                          </eventsRec>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>H.sapiens*LOST</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <loss speciesLocation="H.sapiens"></loss>
+                        </eventsRec>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>n60</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>0.1454414253</branch_length>
+                    <eventsRec>
+                      <speciation speciesLocation="Sauria"></speciation>
+                    </eventsRec>
+                    <clade>
+                      <name>n58</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>0.0504139834</branch_length>
+                      <eventsRec>
+                        <speciation speciesLocation="Archelosauria"></speciation>
+                      </eventsRec>
+                      <clade>
+                        <name>G.gallus_WEE2_wee1like_protein_kinase_2</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>0.3205314429</branch_length>
+                        <eventsRec>
+                          <leaf speciesLocation="G.gallus" geneName="G.gallus_WEE2_wee1like_protein_kinase_2"></leaf>
+                        </eventsRec>
+                      </clade>
+                      <clade>
+                        <name>C.mydas_WEE2_wee1like_protein_kinase_2_isoform_X3</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>0.1167770078</branch_length>
+                        <eventsRec>
+                          <leaf speciesLocation="C.mydas" geneName="C.mydas_WEE2_wee1like_protein_kinase_2_isoform_X3"></leaf>
+                        </eventsRec>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>S.townsendi_WEE2_wee1like_protein_kinase_2</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>0.2845134902</branch_length>
+                      <eventsRec>
+                        <leaf speciesLocation="S.townsendi" geneName="S.townsendi_WEE2_wee1like_protein_kinase_2"></leaf>
+                      </eventsRec>
+                    </clade>
+                  </clade>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>C.carcharias_LOC121293265_wee1like_protein_kinase_2A</name>
+              <confidence>1.0</confidence>
+              <branch_length>0.7630471299</branch_length>
+              <eventsRec>
+                <leaf speciesLocation="C.carcharias" geneName="C.carcharias_LOC121293265_wee1like_protein_kinase_2A"></leaf>
+              </eventsRec>
+            </clade>
+          </clade>
+          <clade>
+            <name>n94</name>
+            <confidence>1.0</confidence>
+            <branch_length>0.2210410355</branch_length>
+            <eventsRec>
+              <duplication speciesLocation="Gnathostomata"></duplication>
+            </eventsRec>
+            <clade>
+              <name>n80</name>
+              <confidence>1.0</confidence>
+              <branch_length>0.0639626592</branch_length>
+              <eventsRec>
+                <speciation speciesLocation="Gnathostomata"></speciation>
+              </eventsRec>
+              <clade>
+                <name>r83</name>
+                <confidence>1.0</confidence>
+                <branch_length>1.0</branch_length>
+                <eventsRec>
+                  <speciation speciesLocation="Euteleostomi"></speciation>
+                </eventsRec>
+                <clade>
+                  <name>n78</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>0.107199497</branch_length>
+                  <eventsRec>
+                    <speciation speciesLocation="Tetrapoda"></speciation>
+                  </eventsRec>
+                  <clade>
+                    <name>n76</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>0.0902837346</branch_length>
+                    <eventsRec>
+                      <speciation speciesLocation="Amniota"></speciation>
+                    </eventsRec>
+                    <clade>
+                      <name>n70</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>0.1516902731</branch_length>
+                      <eventsRec>
+                        <speciation speciesLocation="Boreoeutheria"></speciation>
+                      </eventsRec>
+                      <clade>
+                        <name>n68</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>0.0075513344</branch_length>
+                        <eventsRec>
+                          <speciation speciesLocation="Laurasiatheria"></speciation>
+                        </eventsRec>
+                        <clade>
+                          <name>E.caballus_WEE1_wee1like_protein_kinase</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>0.0297092611</branch_length>
+                          <eventsRec>
+                            <leaf speciesLocation="E.caballus" geneName="E.caballus_WEE1_wee1like_protein_kinase"></leaf>
+                          </eventsRec>
+                        </clade>
+                        <clade>
+                          <name>F.catus_WEE1_wee1like_protein_kinase_isoform_X1</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>0.0444419309</branch_length>
+                          <eventsRec>
+                            <leaf speciesLocation="F.catus" geneName="F.catus_WEE1_wee1like_protein_kinase_isoform_X1"></leaf>
+                          </eventsRec>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>H.sapiens_WEE1_wee1like_protein_kinase_isoform_1</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>0.0187603341</branch_length>
+                        <eventsRec>
+                          <leaf speciesLocation="H.sapiens" geneName="H.sapiens_WEE1_wee1like_protein_kinase_isoform_1"></leaf>
+                        </eventsRec>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>n75</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>0.0656728968</branch_length>
+                      <eventsRec>
+                        <speciation speciesLocation="Sauria"></speciation>
+                      </eventsRec>
+                      <clade>
+                        <name>n73</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>0.0246594586</branch_length>
+                        <eventsRec>
+                          <speciation speciesLocation="Archelosauria"></speciation>
+                        </eventsRec>
+                        <clade>
+                          <name>G.gallus_WEE1_wee1like_protein_kinase_isoform_X1</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>0.0767475372</branch_length>
+                          <eventsRec>
+                            <leaf speciesLocation="G.gallus" geneName="G.gallus_WEE1_wee1like_protein_kinase_isoform_X1"></leaf>
+                          </eventsRec>
+                        </clade>
+                        <clade>
+                          <name>C.mydas_WEE1_wee1like_protein_kinase_isoform_X1</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>0.0564708071</branch_length>
+                          <eventsRec>
+                            <leaf speciesLocation="C.mydas" geneName="C.mydas_WEE1_wee1like_protein_kinase_isoform_X1"></leaf>
+                          </eventsRec>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>S.townsendi_WEE1_wee1like_protein_kinase</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>0.1220158059</branch_length>
+                        <eventsRec>
+                          <leaf speciesLocation="S.townsendi" geneName="S.townsendi_WEE1_wee1like_protein_kinase"></leaf>
+                        </eventsRec>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>X.laevis_wee1.S_wee1like_protein_kinase_1B_isoform_X1</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>0.2507261542</branch_length>
+                    <eventsRec>
+                      <leaf speciesLocation="X.laevis" geneName="X.laevis_wee1.S_wee1like_protein_kinase_1B_isoform_X1"></leaf>
+                    </eventsRec>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>Clupeocephala*LOST</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>1.0</branch_length>
+                  <eventsRec>
+                    <loss speciesLocation="Clupeocephala"></loss>
+                  </eventsRec>
+                </clade>
+              </clade>
+              <clade>
+                <name>C.carcharias_wee1_wee1like_protein_kinase_isoform_X1</name>
+                <confidence>1.0</confidence>
+                <branch_length>0.3667299862</branch_length>
+                <eventsRec>
+                  <leaf speciesLocation="C.carcharias" geneName="C.carcharias_wee1_wee1like_protein_kinase_isoform_X1"></leaf>
+                </eventsRec>
+              </clade>
+            </clade>
+            <clade>
+              <name>r91</name>
+              <confidence>1.0</confidence>
+              <branch_length>1.0</branch_length>
+              <eventsRec>
+                <speciation speciesLocation="Gnathostomata"></speciation>
+              </eventsRec>
+              <clade>
+                <name>r89</name>
+                <confidence>1.0</confidence>
+                <branch_length>1.0</branch_length>
+                <eventsRec>
+                  <speciation speciesLocation="Euteleostomi"></speciation>
+                </eventsRec>
+                <clade>
+                  <name>n93</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>0.2042921236</branch_length>
+                  <eventsRec>
+                    <duplication speciesLocation="Clupeocephala"></duplication>
+                  </eventsRec>
+                  <clade>
+                    <name>r87</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <speciation speciesLocation="Clupeocephala"></speciation>
+                    </eventsRec>
+                    <clade>
+                      <name>r85</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <speciation speciesLocation="Euteleosteomorpha"></speciation>
+                      </eventsRec>
+                      <clade>
+                        <name>n83</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>0.272408336</branch_length>
+                        <eventsRec>
+                          <duplication speciesLocation="S.salar"></duplication>
+                        </eventsRec>
+                        <clade>
+                          <name>S.salar_LOC106587548_wee1like_protein_kinase_1A_isoform_X1</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>0.034927718</branch_length>
+                          <eventsRec>
+                            <leaf speciesLocation="S.salar" geneName="S.salar_LOC106587548_wee1like_protein_kinase_1A_isoform_X1"></leaf>
+                          </eventsRec>
+                        </clade>
+                        <clade>
+                          <name>S.salar_LOC100380819_wee1like_protein_kinase_isoform_X1</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>0.0327210735</branch_length>
+                          <eventsRec>
+                            <leaf speciesLocation="S.salar" geneName="S.salar_LOC100380819_wee1like_protein_kinase_isoform_X1"></leaf>
+                          </eventsRec>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>G.aculeatus*LOST</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <loss speciesLocation="G.aculeatus"></loss>
+                        </eventsRec>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>D.rerio*LOST</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <loss speciesLocation="D.rerio"></loss>
+                      </eventsRec>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>n92</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>0.0502049081</branch_length>
+                    <eventsRec>
+                      <speciation speciesLocation="Clupeocephala"></speciation>
+                    </eventsRec>
+                    <clade>
+                      <name>n90</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>0.0616621205</branch_length>
+                      <eventsRec>
+                        <speciation speciesLocation="Euteleosteomorpha"></speciation>
+                      </eventsRec>
+                      <clade>
+                        <name>n86</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>0.0703540711</branch_length>
+                        <eventsRec>
+                          <duplication speciesLocation="S.salar"></duplication>
+                        </eventsRec>
+                        <clade>
+                          <name>S.salar_LOC106584610_wee1like_protein_kinase_1A</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>0.0456614216</branch_length>
+                          <eventsRec>
+                            <leaf speciesLocation="S.salar" geneName="S.salar_LOC106584610_wee1like_protein_kinase_1A"></leaf>
+                          </eventsRec>
+                        </clade>
+                        <clade>
+                          <name>S.salar_LOC106561062_wee1like_protein_kinase_1A</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>0.1822839772</branch_length>
+                          <eventsRec>
+                            <leaf speciesLocation="S.salar" geneName="S.salar_LOC106561062_wee1like_protein_kinase_1A"></leaf>
+                          </eventsRec>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>n89</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>0.1329413989</branch_length>
+                        <eventsRec>
+                          <duplication speciesLocation="G.aculeatus"></duplication>
+                        </eventsRec>
+                        <clade>
+                          <name>G.aculeatus_wee1_wee1like_protein_kinase</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>0.0023173493</branch_length>
+                          <eventsRec>
+                            <leaf speciesLocation="G.aculeatus" geneName="G.aculeatus_wee1_wee1like_protein_kinase"></leaf>
+                          </eventsRec>
+                        </clade>
+                        <clade>
+                          <name>G.aculeatus_LOC120812640_wee1like_protein_kinase</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>0.0406229416</branch_length>
+                          <eventsRec>
+                            <leaf speciesLocation="G.aculeatus" geneName="G.aculeatus_LOC120812640_wee1like_protein_kinase"></leaf>
+                          </eventsRec>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>D.rerio_wee1_wee1like_protein_kinase</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>0.138455898</branch_length>
+                      <eventsRec>
+                        <leaf speciesLocation="D.rerio" geneName="D.rerio_wee1_wee1like_protein_kinase"></leaf>
+                      </eventsRec>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>Tetrapoda*LOST</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>1.0</branch_length>
+                  <eventsRec>
+                    <loss speciesLocation="Tetrapoda"></loss>
+                  </eventsRec>
+                </clade>
+              </clade>
+              <clade>
+                <name>C.carcharias*LOST</name>
+                <confidence>1.0</confidence>
+                <branch_length>1.0</branch_length>
+                <eventsRec>
+                  <loss speciesLocation="C.carcharias"></loss>
+                </eventsRec>
+              </clade>
+            </clade>
+          </clade>
+        </clade>
+        <clade>
+          <name>n116</name>
+          <confidence>1.0</confidence>
+          <branch_length>2.74654543645</branch_length>
+          <eventsRec>
+            <duplication speciesLocation="Gnathostomata"></duplication>
+          </eventsRec>
+          <clade>
+            <name>n110</name>
+            <confidence>1.0</confidence>
+            <branch_length>0.3307241014</branch_length>
+            <eventsRec>
+              <duplication speciesLocation="Gnathostomata"></duplication>
+            </eventsRec>
+            <clade>
+              <name>n104</name>
+              <confidence>1.0</confidence>
+              <branch_length>0.2349853072</branch_length>
+              <eventsRec>
+                <duplication speciesLocation="Gnathostomata"></duplication>
+              </eventsRec>
+              <clade>
+                <name>r101</name>
+                <confidence>1.0</confidence>
+                <branch_length>1.0</branch_length>
+                <eventsRec>
+                  <speciation speciesLocation="Gnathostomata"></speciation>
+                </eventsRec>
+                <clade>
+                  <name>r99</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>1.0</branch_length>
+                  <eventsRec>
+                    <speciation speciesLocation="Euteleostomi"></speciation>
+                  </eventsRec>
+                  <clade>
+                    <name>r97</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <speciation speciesLocation="Tetrapoda"></speciation>
+                    </eventsRec>
+                    <clade>
+                      <name>r95</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <speciation speciesLocation="Amniota"></speciation>
+                      </eventsRec>
+                      <clade>
+                        <name>n98</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>0.2863644413</branch_length>
+                        <eventsRec>
+                          <speciation speciesLocation="Sauria"></speciation>
+                        </eventsRec>
+                        <clade>
+                          <name>S.townsendi_PKMYT1_membraneassociated_tyrosine_and_threoninespeci</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>0.5658504036</branch_length>
+                          <eventsRec>
+                            <leaf speciesLocation="S.townsendi" geneName="S.townsendi_PKMYT1_membraneassociated_tyrosine_and_threoninespeci"></leaf>
+                          </eventsRec>
+                        </clade>
+                        <clade>
+                          <name>r93</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>1.0</branch_length>
+                          <eventsRec>
+                            <speciation speciesLocation="Archelosauria"></speciation>
+                          </eventsRec>
+                          <clade>
+                            <name>C.mydas_PKMYT1_membraneassociated_tyrosine_and_threoninespecific_</name>
+                            <confidence>1.0</confidence>
+                            <branch_length>0.2243839986</branch_length>
+                            <eventsRec>
+                              <leaf speciesLocation="C.mydas" geneName="C.mydas_PKMYT1_membraneassociated_tyrosine_and_threoninespecific_"></leaf>
+                            </eventsRec>
+                          </clade>
+                          <clade>
+                            <name>G.gallus*LOST</name>
+                            <confidence>1.0</confidence>
+                            <branch_length>1.0</branch_length>
+                            <eventsRec>
+                              <loss speciesLocation="G.gallus"></loss>
+                            </eventsRec>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Boreoeutheria*LOST</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>1.0</branch_length>
+                        <eventsRec>
+                          <loss speciesLocation="Boreoeutheria"></loss>
+                        </eventsRec>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>X.laevis*LOST</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <loss speciesLocation="X.laevis"></loss>
+                      </eventsRec>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>Clupeocephala*LOST</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <loss speciesLocation="Clupeocephala"></loss>
+                    </eventsRec>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>C.carcharias*LOST</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>1.0</branch_length>
+                  <eventsRec>
+                    <loss speciesLocation="C.carcharias"></loss>
+                  </eventsRec>
+                </clade>
+              </clade>
+              <clade>
+                <name>n103</name>
+                <confidence>1.0</confidence>
+                <branch_length>0.2008102498</branch_length>
+                <eventsRec>
+                  <speciation speciesLocation="Gnathostomata"></speciation>
+                </eventsRec>
+                <clade>
+                  <name>r105</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>1.0</branch_length>
+                  <eventsRec>
+                    <speciation speciesLocation="Euteleostomi"></speciation>
+                  </eventsRec>
+                  <clade>
+                    <name>r103</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <speciation speciesLocation="Tetrapoda"></speciation>
+                    </eventsRec>
+                    <clade>
+                      <name>n101</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>0.7915515055</branch_length>
+                      <eventsRec>
+                        <duplication speciesLocation="X.laevis"></duplication>
+                      </eventsRec>
+                      <clade>
+                        <name>X.laevis_pkmyt1.L_membraneassociated_tyrosine_and_threoninespecif</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>0.0339282625</branch_length>
+                        <eventsRec>
+                          <leaf speciesLocation="X.laevis" geneName="X.laevis_pkmyt1.L_membraneassociated_tyrosine_and_threoninespecif"></leaf>
+                        </eventsRec>
+                      </clade>
+                      <clade>
+                        <name>X.laevis_pkmyt1.S_membraneassociated_tyrosine_and_threoninespecif</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>0.0592965338</branch_length>
+                        <eventsRec>
+                          <leaf speciesLocation="X.laevis" geneName="X.laevis_pkmyt1.S_membraneassociated_tyrosine_and_threoninespecif"></leaf>
+                        </eventsRec>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Amniota*LOST</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <loss speciesLocation="Amniota"></loss>
+                      </eventsRec>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>Clupeocephala*LOST</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <loss speciesLocation="Clupeocephala"></loss>
+                    </eventsRec>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>C.carcharias_pkmyt1_membraneassociated_tyrosine_and_threoninespec</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>0.7813415934</branch_length>
+                  <eventsRec>
+                    <leaf speciesLocation="C.carcharias" geneName="C.carcharias_pkmyt1_membraneassociated_tyrosine_and_threoninespec"></leaf>
+                  </eventsRec>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>r113</name>
+              <confidence>1.0</confidence>
+              <branch_length>1.0</branch_length>
+              <eventsRec>
+                <speciation speciesLocation="Gnathostomata"></speciation>
+              </eventsRec>
+              <clade>
+                <name>r111</name>
+                <confidence>1.0</confidence>
+                <branch_length>1.0</branch_length>
+                <eventsRec>
+                  <speciation speciesLocation="Euteleostomi"></speciation>
+                </eventsRec>
+                <clade>
+                  <name>r109</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>1.0</branch_length>
+                  <eventsRec>
+                    <speciation speciesLocation="Tetrapoda"></speciation>
+                  </eventsRec>
+                  <clade>
+                    <name>r107</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <speciation speciesLocation="Amniota"></speciation>
+                    </eventsRec>
+                    <clade>
+                      <name>n109</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>0.8318224744</branch_length>
+                      <eventsRec>
+                        <speciation speciesLocation="Boreoeutheria"></speciation>
+                      </eventsRec>
+                      <clade>
+                        <name>n107</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>0.0328447764</branch_length>
+                        <eventsRec>
+                          <speciation speciesLocation="Laurasiatheria"></speciation>
+                        </eventsRec>
+                        <clade>
+                          <name>E.caballus_PKMYT1_membraneassociated_tyrosine_and_threoninespecif</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>0.0597030166</branch_length>
+                          <eventsRec>
+                            <leaf speciesLocation="E.caballus" geneName="E.caballus_PKMYT1_membraneassociated_tyrosine_and_threoninespecif"></leaf>
+                          </eventsRec>
+                        </clade>
+                        <clade>
+                          <name>F.catus_PKMYT1_membraneassociated_tyrosine_and_threoninespecific_</name>
+                          <confidence>1.0</confidence>
+                          <branch_length>0.2939116672</branch_length>
+                          <eventsRec>
+                            <leaf speciesLocation="F.catus" geneName="F.catus_PKMYT1_membraneassociated_tyrosine_and_threoninespecific_"></leaf>
+                          </eventsRec>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>H.sapiens_PKMYT1_membraneassociated_tyrosine_and_threoninespecifi</name>
+                        <confidence>1.0</confidence>
+                        <branch_length>0.0431251601</branch_length>
+                        <eventsRec>
+                          <leaf speciesLocation="H.sapiens" geneName="H.sapiens_PKMYT1_membraneassociated_tyrosine_and_threoninespecifi"></leaf>
+                        </eventsRec>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Sauria*LOST</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <loss speciesLocation="Sauria"></loss>
+                      </eventsRec>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>X.laevis*LOST</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <loss speciesLocation="X.laevis"></loss>
+                    </eventsRec>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>Clupeocephala*LOST</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>1.0</branch_length>
+                  <eventsRec>
+                    <loss speciesLocation="Clupeocephala"></loss>
+                  </eventsRec>
+                </clade>
+              </clade>
+              <clade>
+                <name>C.carcharias*LOST</name>
+                <confidence>1.0</confidence>
+                <branch_length>1.0</branch_length>
+                <eventsRec>
+                  <loss speciesLocation="C.carcharias"></loss>
+                </eventsRec>
+              </clade>
+            </clade>
+          </clade>
+          <clade>
+            <name>r123</name>
+            <confidence>1.0</confidence>
+            <branch_length>1.0</branch_length>
+            <eventsRec>
+              <speciation speciesLocation="Gnathostomata"></speciation>
+            </eventsRec>
+            <clade>
+              <name>r121</name>
+              <confidence>1.0</confidence>
+              <branch_length>1.0</branch_length>
+              <eventsRec>
+                <speciation speciesLocation="Euteleostomi"></speciation>
+              </eventsRec>
+              <clade>
+                <name>n115</name>
+                <confidence>1.0</confidence>
+                <branch_length>1.020742529</branch_length>
+                <eventsRec>
+                  <duplication speciesLocation="Clupeocephala"></duplication>
+                </eventsRec>
+                <clade>
+                  <name>n113</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>0.1476080419</branch_length>
+                  <eventsRec>
+                    <speciation speciesLocation="Clupeocephala"></speciation>
+                  </eventsRec>
+                  <clade>
+                    <name>r115</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <speciation speciesLocation="Euteleosteomorpha"></speciation>
+                    </eventsRec>
+                    <clade>
+                      <name>S.salar_pkmyt1_membraneassociated_tyrosine_and_threoninespecific_</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>0.2110925712</branch_length>
+                      <eventsRec>
+                        <leaf speciesLocation="S.salar" geneName="S.salar_pkmyt1_membraneassociated_tyrosine_and_threoninespecific_"></leaf>
+                      </eventsRec>
+                    </clade>
+                    <clade>
+                      <name>G.aculeatus*LOST</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <loss speciesLocation="G.aculeatus"></loss>
+                      </eventsRec>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>D.rerio_pkmyt1_membraneassociated_tyrosine_and_threoninespecific_</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0079075641</branch_length>
+                    <eventsRec>
+                      <leaf speciesLocation="D.rerio" geneName="D.rerio_pkmyt1_membraneassociated_tyrosine_and_threoninespecific_"></leaf>
+                    </eventsRec>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>r119</name>
+                  <confidence>1.0</confidence>
+                  <branch_length>1.0</branch_length>
+                  <eventsRec>
+                    <speciation speciesLocation="Clupeocephala"></speciation>
+                  </eventsRec>
+                  <clade>
+                    <name>r117</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <speciation speciesLocation="Euteleosteomorpha"></speciation>
+                    </eventsRec>
+                    <clade>
+                      <name>G.aculeatus_pkmyt1_membraneassociated_tyrosine_and_threoninespeci</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>0.3308819269</branch_length>
+                      <eventsRec>
+                        <leaf speciesLocation="G.aculeatus" geneName="G.aculeatus_pkmyt1_membraneassociated_tyrosine_and_threoninespeci"></leaf>
+                      </eventsRec>
+                    </clade>
+                    <clade>
+                      <name>S.salar*LOST</name>
+                      <confidence>1.0</confidence>
+                      <branch_length>1.0</branch_length>
+                      <eventsRec>
+                        <loss speciesLocation="S.salar"></loss>
+                      </eventsRec>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>D.rerio*LOST</name>
+                    <confidence>1.0</confidence>
+                    <branch_length>1.0</branch_length>
+                    <eventsRec>
+                      <loss speciesLocation="D.rerio"></loss>
+                    </eventsRec>
+                  </clade>
+                </clade>
+              </clade>
+              <clade>
+                <name>Tetrapoda*LOST</name>
+                <confidence>1.0</confidence>
+                <branch_length>1.0</branch_length>
+                <eventsRec>
+                  <loss speciesLocation="Tetrapoda"></loss>
+                </eventsRec>
+              </clade>
+            </clade>
+            <clade>
+              <name>C.carcharias*LOST</name>
+              <confidence>1.0</confidence>
+              <branch_length>1.0</branch_length>
+              <eventsRec>
+                <loss speciesLocation="C.carcharias"></loss>
+              </eventsRec>
+            </clade>
+          </clade>
+        </clade>
+      </clade>
+    </phylogeny>
+  </recGeneTree>
+</recPhylo>

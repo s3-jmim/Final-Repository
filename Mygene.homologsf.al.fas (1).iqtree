@@ -1,0 +1,515 @@
+IQ-TREE 2.3.6 built Aug  1 2024
+
+Input file name: /home/bio312-user/lab05-s3-jmim/Mygene/Mygene.homologsf.al.fas
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 418236
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 38 sequences with 1132 amino-acid sites
+Number of constant sites: 316 (= 27.9152% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 316 (= 27.9152% of all sites)
+Number of parsimony informative sites: 658
+Number of distinct site patterns: 993
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: Q.mammal+R4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+Q.mammal+R4      -24922.878   50003.755 - 9.03e-21   50015.771 - 3.22e-19   50401.263 +    0.873
+Q.mammal+I+R4    -24922.079   50004.157 - 7.39e-21   50016.488 - 2.25e-19   50406.696 +   0.0577
+Q.mammal+F+R4    -24858.878   49913.757 +    0.315   49932.541 +    0.381   50406.868 +    0.053
+Q.mammal+F+I+R4  -24857.735   49913.470 +    0.364   49932.656 +     0.36   50411.612 -  0.00494
+Q.mammal+I+G4    -24942.202   50034.404 -    2e-27   50045.200 - 1.31e-25   50411.785 -  0.00453
+Q.mammal+R5      -24921.371   50004.742 - 5.51e-21   50017.394 - 1.43e-19   50412.313 -  0.00348
+Q.mammal+F+I+G4  -24876.002   49940.003 -  6.3e-07   49957.226 - 1.66e-06   50412.987 -  0.00249
+Q.mammal+F+R5    -24856.860   49913.720 +    0.321   49933.313 +    0.259   50416.894 - 0.000352
+JTT+F+I+G4       -24902.421   49992.843 - 2.11e-18   50010.066 - 5.58e-18   50465.826 - 8.35e-15
+JTT+F+R4         -24889.577   49975.153 - 1.47e-14   49993.938 - 1.77e-14   50468.264 - 2.47e-15
+JTT+F+I+R4       -24887.393   49972.785 - 4.79e-14   49991.971 - 4.74e-14   50470.928 - 6.51e-16
+JTT+F+R5         -24885.555   49971.111 - 1.11e-13   49990.704 - 8.94e-14   50474.285 - 1.22e-16
+JTTDCMut+F+I+G4  -24917.100   50022.200 - 8.92e-25   50039.423 - 2.35e-24   50495.184 - 3.52e-21
+JTTDCMut+F+R4    -24904.462   50004.924 - 5.03e-21   50023.708 - 6.09e-21   50498.035 - 8.46e-22
+JTTDCMut+F+I+R4  -24902.200   50002.400 - 1.78e-20   50021.586 - 1.76e-20   50500.543 - 2.42e-22
+Q.plant+F+R4     -24907.168   50010.336 - 3.36e-22   50029.120 - 4.07e-22   50503.447 - 5.65e-23
+JTTDCMut+F+R5    -24900.162   50000.324 - 5.02e-20   50019.916 - 4.05e-20   50503.498 - 5.51e-23
+Q.plant+F+R5     -24900.411   50000.822 - 3.91e-20   50020.414 - 3.16e-20   50503.996 -  4.3e-23
+Q.plant+F+I+R4   -24904.687   50007.374 - 1.48e-21   50026.560 - 1.46e-21   50505.516 - 2.01e-23
+Q.plant+F+I+G4   -24923.221   50034.442 - 1.96e-27   50051.665 - 5.17e-27   50507.426 - 7.73e-24
+Q.bird+F+R4      -24947.667   50091.334 - 8.67e-40   50110.118 - 1.05e-39   50584.445 - 1.46e-40
+Q.bird+F+I+R4    -24946.555   50091.111 -  9.7e-40   50110.297 - 9.59e-40   50589.253 - 1.32e-41
+Q.bird+F+I+G4    -24965.115   50118.230 - 1.25e-45   50135.453 - 3.31e-45   50591.214 - 4.94e-42
+Q.bird+F+R5      -24944.458   50088.916 - 2.91e-39   50108.508 - 2.35e-39   50592.090 - 3.19e-42
+Q.bird+R4        -25028.316   50214.632 - 1.46e-66   50226.647 - 5.21e-65   50612.140 - 1.41e-46
+Q.bird+I+R4      -25027.533   50215.067 - 1.17e-66   50227.398 - 3.58e-65   50617.606 - 9.18e-48
+Q.insect+F+R4    -24965.409   50126.819 - 1.71e-47   50145.603 - 2.07e-47   50619.930 - 2.87e-48
+Q.bird+R5        -25025.942   50213.883 - 2.12e-66   50226.535 - 5.51e-65   50621.454 - 1.34e-48
+Q.insect+F+I+R4  -24963.884   50125.768 - 2.89e-47   50144.954 - 2.86e-47   50623.911 - 3.93e-49
+Q.bird+I+G4      -25048.599   50247.198 - 1.24e-73   50257.994 - 8.13e-72   50624.579 - 2.81e-49
+Q.insect+F+R5    -24961.249   50122.498 - 1.48e-46   50142.091 -  1.2e-46   50625.672 - 1.63e-49
+Q.insect+F+I+G4  -24984.523   50157.046 - 4.67e-54   50174.269 - 1.23e-53   50630.030 - 1.84e-50
+JTT+I+G4         -25075.104   50300.208 - 3.82e-85   50311.003 - 2.51e-83   50677.588 - 8.67e-61
+JTT+R4           -25062.328   50282.656 - 2.47e-81   50294.671 - 8.82e-80   50680.164 - 2.39e-61
+JTT+I+R4         -25060.245   50280.490 -  7.3e-81   50292.821 - 2.22e-79   50683.029 - 5.71e-62
+JTT+R5           -25058.500   50278.999 - 1.54e-80   50291.651 - 3.99e-79   50686.570 - 9.72e-63
+JTTDCMut+I+G4    -25093.300   50336.600 - 4.78e-93   50347.396 - 3.14e-91   50713.981 - 1.08e-68
+JTTDCMut+R4      -25080.717   50319.433 - 2.55e-89   50331.448 - 9.11e-88   50716.941 - 2.47e-69
+JTTDCMut+I+R4    -25078.583   50317.166 - 7.93e-89   50329.497 - 2.42e-87   50719.706 -  6.2e-70
+JTTDCMut+R5      -25076.613   50315.226 - 2.09e-88   50327.877 - 5.43e-87   50722.797 - 1.32e-70
+Q.yeast+F+R4     -25073.416   50342.832 - 2.12e-94   50361.617 - 2.56e-94   50835.943 - 3.56e-95
+Q.yeast+F+I+R4   -25071.617   50341.234 - 4.71e-94   50360.420 - 4.66e-94   50839.376 -  6.4e-96
+Q.yeast+F+R5     -25068.591   50337.181 - 3.57e-93   50356.774 - 2.88e-93   50840.355 - 3.92e-96
+Q.yeast+F+I+G4   -25094.658   50377.317 - 6.88e-102   50394.540 - 1.82e-101   50850.301 - 2.72e-98
+Q.pfam+F+R4      -25083.712   50363.424 - 7.16e-99   50382.208 - 8.65e-99   50856.534 -  1.2e-99
+Q.pfam+F+I+R4    -25082.736   50363.473 - 6.98e-99   50382.659 - 6.91e-99   50861.615 - 9.48e-101
+Q.pfam+F+R5      -25079.931   50359.863 - 4.24e-98   50379.456 - 3.43e-98   50863.037 - 4.66e-101
+VT+F+R4          -25089.648   50375.295 - 1.89e-101   50394.079 - 2.29e-101   50868.406 - 3.18e-102
+Q.pfam+F+I+G4    -25104.762   50397.525 - 2.82e-106   50414.747 - 7.43e-106   50870.508 - 1.11e-102
+VT+F+I+G4        -25104.869   50397.739 - 2.53e-106   50414.962 - 6.68e-106   50870.723 - 9.99e-103
+VT+F+I+R4        -25088.445   50374.890 - 2.32e-101   50394.076 - 2.29e-101   50873.033 - 3.15e-103
+VT+F+R5          -25088.300   50376.600 - 9.85e-102   50396.193 - 7.95e-102   50879.774 - 1.08e-104
+Q.plant+R4       -25179.728   50517.456 - 2.55e-132   50529.472 - 9.1e-131   50914.964 - 2.47e-112
+Q.plant+R5       -25173.256   50508.511 - 2.24e-130   50521.162 - 5.8e-129   50916.082 - 1.41e-112
+Q.plant+I+R4     -25178.130   50516.260 - 4.64e-132   50528.591 - 1.41e-130   50918.799 - 3.63e-113
+Q.plant+I+G4     -25197.096   50544.193 - 3.99e-138   50554.988 - 2.62e-136   50921.573 - 9.06e-114
+LG+F+R4          -25135.169   50466.338 - 3.21e-121   50485.122 - 3.89e-121   50959.448 - 5.4e-122
+LG+F+I+R4        -25134.162   50466.323 - 3.24e-121   50485.509 - 3.2e-121   50964.465 - 4.4e-123
+LG+F+R5          -25131.801   50463.603 - 1.26e-120   50483.196 - 1.02e-120   50966.777 - 1.38e-123
+WAG+F+R4         -25142.793   50481.587 - 1.57e-124   50500.371 - 1.9e-124   50974.697 - 2.64e-125
+LG+F+I+G4        -25157.782   50503.564 - 2.65e-129   50520.787 -   7e-129   50976.548 - 1.05e-125
+WAG+F+I+R4       -25141.347   50480.694 - 2.45e-124   50499.880 - 2.43e-124   50978.837 - 3.33e-126
+WAG+F+R5         -25138.285   50476.570 - 1.93e-123   50496.162 - 1.56e-123   50979.744 - 2.12e-126
+WAG+F+I+G4       -25160.943   50509.885 - 1.12e-130   50527.108 - 2.97e-130   50982.869 - 4.44e-127
+mtMet+F+R5       -25151.075   50502.151 - 5.38e-129   50521.743 - 4.34e-129   51005.325 - 5.9e-132
+mtMet+F+I+G4     -25175.756   50539.512 - 4.14e-137   50556.735 - 1.09e-136   51012.496 - 1.64e-133
+mtInv+F+R5       -25155.252   50510.503 - 8.25e-131   50530.096 - 6.66e-131   51013.677 - 9.06e-134
+mtMet+F+I+R4     -25159.684   50517.367 - 2.67e-132   50536.553 - 2.64e-132   51015.510 - 3.62e-134
+mtMet+F+R4       -25164.238   50524.476 - 7.63e-134   50543.260 - 9.23e-134   51017.587 - 1.28e-134
+mtInv+F+I+G4     -25179.074   50546.148 - 1.5e-138   50563.371 - 3.96e-138   51019.132 - 5.93e-135
+mtInv+F+I+R4     -25162.077   50522.154 - 2.44e-133   50541.341 - 2.41e-133   51020.297 - 3.31e-135
+mtInv+F+R4       -25167.102   50530.204 - 4.35e-135   50548.988 - 5.26e-135   51023.315 - 7.32e-136
+HIVb+F+I+G4      -25219.533   50627.065 - 4.03e-156   50644.288 - 1.06e-155   51100.049 - 1.59e-152
+HIVb+F+R5        -25200.666   50601.332 - 1.56e-150   50620.924 - 1.26e-150   51104.506 - 1.71e-153
+HIVb+F+I+R4      -25206.598   50611.197 - 1.13e-152   50630.383 - 1.11e-152   51109.339 - 1.53e-154
+HIVb+F+R4        -25211.321   50618.642 - 2.72e-154   50637.426 - 3.29e-154   51111.752 - 4.58e-155
+VT+R4            -25323.286   50804.572 - 1.15e-194   50816.588 - 4.1e-193   51202.080 - 1.11e-174
+VT+I+G4          -25337.865   50825.729 - 2.93e-199   50836.525 - 1.92e-197   51203.110 - 6.64e-175
+VT+I+R4          -25322.023   50804.046 - 1.5e-194   50816.377 - 4.55e-193   51206.586 - 1.17e-175
+VT+R5            -25322.360   50806.719 - 3.93e-195   50819.370 - 1.02e-193   51214.290 - 2.48e-177
+rtREV+F+R4       -25283.905   50763.809 - 8.17e-186   50782.594 - 9.87e-186   51256.920 - 1.37e-186
+rtREV+F+R5       -25277.431   50754.863 - 7.16e-184   50774.455 - 5.78e-184   51258.037 - 7.86e-187
+rtREV+F+I+R4     -25282.741   50763.481 - 9.62e-186   50782.667 - 9.52e-186   51261.624 - 1.31e-187
+rtREV+F+I+G4     -25306.316   50800.631 - 8.25e-194   50817.854 - 2.18e-193   51273.615 - 3.25e-190
+cpREV+F+I+G4     -25321.142   50830.283 -   3e-200   50847.506 - 7.92e-200   51303.267 - 1.18e-196
+cpREV+F+I+R4     -25303.832   50805.664 - 6.66e-195   50824.850 - 6.58e-195   51303.807 - 9.04e-197
+cpREV+F+R5       -25300.400   50800.799 - 7.58e-194   50820.392 - 6.12e-194   51303.973 - 8.32e-197
+DCMut+F+R5       -25302.722   50805.444 - 7.43e-195   50825.037 -   6e-195   51308.618 - 8.16e-198
+Dayhoff+F+R5     -25302.783   50805.565 -   7e-195   50825.158 - 5.65e-195   51308.739 - 7.68e-198
+cpREV+F+R4       -25311.174   50818.349 - 1.17e-197   50837.133 - 1.42e-197   51311.459 - 1.97e-198
+WAG+R4           -25378.252   50914.503 - 1.55e-218   50926.518 - 5.52e-217   51312.011 - 1.5e-198
+DCMut+F+I+G4     -25325.789   50839.578 - 2.88e-202   50856.801 - 7.6e-202   51312.562 - 1.14e-198
+Dayhoff+F+I+G4   -25326.031   50840.061 - 2.26e-202   50857.284 - 5.97e-202   51313.045 - 8.92e-199
+DCMut+F+I+R4     -25308.740   50815.481 - 4.92e-197   50834.667 - 4.86e-197   51313.623 - 6.68e-199
+Dayhoff+F+I+R4   -25308.922   50815.845 - 4.1e-197   50835.031 - 4.05e-197   51313.987 - 5.57e-199
+WAG+I+R4         -25376.551   50913.102 - 3.12e-218   50925.433 - 9.49e-217   51315.641 - 2.44e-199
+WAG+I+G4         -25395.680   50941.359 - 2.28e-224   50952.155 - 1.5e-222   51318.740 - 5.17e-200
+DCMut+F+R4       -25315.130   50826.260 - 2.24e-199   50845.044 - 2.71e-199   51319.371 - 3.77e-200
+Dayhoff+F+R4     -25315.319   50826.637 - 1.86e-199   50845.421 - 2.25e-199   51319.748 - 3.12e-200
+WAG+R5           -25375.460   50912.921 - 3.41e-218   50925.572 - 8.85e-217   51320.492 - 2.15e-200
+Q.insect+R4      -25386.477   50930.954 - 4.14e-222   50942.969 - 1.48e-220   51328.461 - 4.01e-202
+Q.pfam+R4        -25386.743   50931.487 - 3.17e-222   50943.502 - 1.13e-220   51328.994 - 3.07e-202
+Q.insect+I+R4    -25385.400   50930.800 - 4.47e-222   50943.131 - 1.36e-220   51333.340 - 3.49e-203
+Q.pfam+I+R4      -25385.693   50931.385 - 3.34e-222   50943.716 - 1.02e-220   51333.925 - 2.61e-203
+Q.pfam+R5        -25383.176   50928.351 - 1.52e-221   50941.003 - 3.95e-220   51335.922 - 9.61e-204
+Q.insect+R5      -25383.576   50929.152 - 1.02e-221   50941.803 - 2.65e-220   51336.723 - 6.44e-204
+Q.pfam+I+G4      -25406.234   50962.468 - 5.94e-229   50973.263 - 3.9e-227   51339.848 - 1.35e-204
+Q.insect+I+G4    -25406.734   50963.468 - 3.6e-229   50974.263 - 2.37e-227   51340.849 - 8.18e-205
+mtVer+F+I+G4     -25353.398   50894.796 - 2.94e-214   50912.019 - 7.76e-214   51367.780 - 1.16e-210
+mtVer+F+I+R4     -25336.999   50871.999 - 2.62e-209   50891.185 - 2.6e-209   51370.141 - 3.56e-211
+mtVer+F+R5       -25333.765   50867.531 - 2.45e-208   50887.123 - 1.98e-208   51370.705 - 2.69e-211
+mtVer+F+R4       -25343.270   50882.541 - 1.35e-211   50901.325 - 1.63e-211   51375.652 - 2.27e-212
+FLU+F+R5         -25341.328   50882.656 - 1.27e-211   50902.248 - 1.03e-211   51385.830 - 1.4e-214
+FLU+F+R4         -25351.032   50898.065 - 5.74e-215   50916.849 - 6.94e-215   51391.175 - 9.65e-216
+FLU+F+I+R4       -25347.910   50893.820 - 4.79e-214   50913.006 - 4.74e-214   51391.963 - 6.51e-216
+FLU+F+I+G4       -25367.764   50923.528 - 1.7e-220   50940.751 - 4.48e-220   51396.512 - 6.69e-217
+PMB+F+R4         -25378.441   50952.881 - 7.17e-227   50971.665 - 8.67e-227   51445.992 - 1.21e-227
+PMB+F+I+G4       -25393.037   50974.073 - 1.79e-231   50991.296 - 4.74e-231   51447.057 - 7.08e-228
+PMB+F+I+R4       -25377.494   50952.989 - 6.8e-227   50972.175 - 6.72e-227   51451.131 - 9.23e-229
+PMB+F+R5         -25376.740   50953.480 - 5.31e-227   50973.073 - 4.29e-227   51456.655 - 5.83e-230
+LG+R4            -25484.129   51126.259 - 1.61e-264   51138.274 - 5.75e-263   51523.766 - 1.56e-244
+LG+R5            -25478.974   51119.947 - 3.78e-263   51132.599 - 9.81e-262   51527.518 - 2.39e-245
+LG+I+R4          -25483.478   51126.957 - 1.14e-264   51139.288 - 3.46e-263   51529.496 - 8.88e-246
+LG+I+G4          -25501.908   51153.817 - 1.67e-270   51164.612 - 1.1e-268   51531.197 - 3.79e-246
+LG+I+R5          -25479.458   51122.915 - 8.57e-264   51135.891 - 1.89e-262   51535.518 - 4.37e-247
+LG+G4            -25508.219   51164.439 - 8.25e-273   51174.940 - 6.27e-271   51536.788 - 2.32e-247
+Blosum62+F+R4    -25429.942   51055.884 - 3.08e-249   51074.668 - 3.73e-249   51548.994 - 5.18e-250
+Blosum62+F+I+R4  -25429.228   51056.456 - 2.32e-249   51075.642 - 2.29e-249   51554.598 - 3.15e-251
+Blosum62+F+I+G4  -25447.732   51083.463 - 3.16e-255   51100.686 - 8.35e-255   51556.447 - 1.25e-251
+Blosum62+F+R5    -25427.010   51054.021 - 7.82e-249   51073.614 - 6.31e-249   51557.195 - 8.59e-252
+mtREV+F+R5       -25440.541   51081.083 - 1.04e-254   51100.675 - 8.39e-255   51584.257 - 1.14e-257
+mtREV+F+I+R4     -25445.116   51088.233 - 2.91e-256   51107.419 - 2.88e-256   51586.375 - 3.96e-258
+mtREV+F+I+G4     -25463.255   51114.511 - 5.73e-262   51131.734 - 1.51e-261   51587.494 - 2.26e-258
+LG+I+R3          -25523.083   51202.166 - 5.3e-281   51213.870 - 2.21e-279   51594.642 - 6.34e-260
+mtREV+F+R4       -25455.431   51106.863 - 2.62e-260   51125.647 - 3.17e-260   51599.973 - 4.41e-261
+LG+R3            -25544.891   51243.781 - 4.87e-290   51255.178 - 2.37e-288   51631.225 - 7.22e-268
+Dayhoff+R5       -25542.866   51247.731 - 6.76e-291   51260.383 - 1.75e-289   51655.302 - 4.27e-273
+DCMut+R5         -25542.886   51247.772 - 6.62e-291   51260.424 - 1.72e-289   51655.343 - 4.18e-273
+DCMut+I+R4       -25547.116   51254.231 - 2.62e-292   51266.562 - 7.98e-291   51656.770 - 2.05e-273
+Dayhoff+I+R4     -25547.318   51254.635 - 2.14e-292   51266.966 - 6.52e-291   51657.174 - 1.67e-273
+HIVb+I+G4        -25565.479   51280.959 - 4.12e-298   51291.754 - 2.7e-296   51658.339 - 9.35e-274
+DCMut+I+G4       -25565.865   51281.731 - 2.8e-298   51292.526 - 1.84e-296   51659.111 - 6.35e-274
+Dayhoff+I+G4     -25566.121   51282.243 - 2.17e-298   51293.038 - 1.42e-296   51659.623 - 4.92e-274
+HIVb+R5          -25545.154   51252.308 - 6.85e-292   51264.959 - 1.78e-290   51659.879 - 4.33e-274
+DCMut+R4         -25552.686   51263.372 - 2.71e-294   51275.387 - 9.68e-293   51660.880 - 2.62e-274
+Dayhoff+R4       -25552.874   51263.749 - 2.25e-294   51275.764 - 8.02e-293   51661.256 - 2.17e-274
+HIVb+R4          -25554.785   51267.569 - 3.33e-295   51279.585 - 1.19e-293   51665.077 - 3.22e-275
+HIVb+I+R4        -25551.991   51263.982 -   2e-294   51276.313 - 6.09e-293   51666.521 - 1.56e-275
+PMB+I+G4         -25598.368   51346.736 - 2.14e-312   51357.531 - 1.41e-310   51724.116 - 4.87e-288
+PMB+R4           -25584.470   51326.941 - 4.26e-308   51338.956 - 1.52e-306   51724.449 - 4.12e-288
+mtZOA+F+R5       -25511.559   51223.118 - 1.49e-285   51242.711 - 1.21e-285   51726.292 - 1.64e-288
+PMB+I+R4         -25583.779   51327.559 - 3.13e-308   51339.890 - 9.53e-307   51730.098 - 2.45e-289
+PMB+R5           -25583.423   51328.846 - 1.64e-308   51341.497 - 4.27e-307   51736.417 - 1.04e-290
+FLAVI+F+I+G4     -25541.318   51270.637 - 7.17e-296   51287.860 - 1.89e-295   51743.621 - 2.83e-292
+FLAVI+F+R5       -25523.795   51247.590 - 7.25e-291   51267.183 - 5.85e-291   51750.764 - 7.96e-294
+mtZOA+F+I+R4     -25527.392   51252.784 - 5.4e-292   51271.970 - 5.34e-292   51750.926 - 7.34e-294
+mtZOA+F+I+G4     -25545.208   51278.416 - 1.47e-297   51295.639 - 3.87e-297   51751.400 - 5.79e-294
+FLAVI+F+I+R4     -25528.701   51255.403 - 1.46e-292   51274.589 - 1.44e-292   51753.545 - 1.98e-294
+cpREV+I+G4       -25615.069   51380.137 - 1.2e-319   51390.933 - 7.86e-318   51757.518 - 2.72e-295
+mtZOA+F+R4       -25536.075   51268.150 - 2.49e-295   51286.934 - 3.01e-295   51761.261 - 4.18e-296
+cpREV+I+R4       -25600.473   51360.947 - 1.76e-315   51373.278 - 5.36e-314   51763.486 - 1.37e-296
+FLAVI+F+R4       -25537.372   51270.745 - 6.8e-296   51289.529 - 8.22e-296   51763.855 - 1.14e-296
+cpREV+R5         -25598.464   51358.927 - 4.83e-315   51371.579 - 1.25e-313   51766.498 - 3.05e-297
+cpREV+R4         -25607.101   51372.202 - 6.33e-318   51384.217 - 2.26e-316   51769.709 - 6.12e-298
+Q.yeast+R4       -25607.348   51372.696 - 4.94e-318   51384.711 - 1.76e-316   51770.203 - 4.78e-298
+Q.yeast+I+R4     -25606.016   51372.032 - 6.89e-318   51384.363 - 2.1e-316   51774.571 - 5.38e-299
+Q.yeast+R5       -25603.688   51369.375 - 2.6e-317   51382.027 - 6.75e-316   51776.946 - 1.64e-299
+LG+I+R2          -25622.832   51397.664 - 1.98e-323   51408.758 - 1.06e-321   51780.077 - 3.43e-300
+Q.yeast+I+G4     -25629.857   51409.714 -        0   51420.509 - 4.94e-324   51787.094 - 1.03e-301
+LG+R2            -25685.295   51520.591 -        0   51531.386 -        0   51897.971 -        0
+rtREV+R4         -25727.999   51613.998 -        0   51626.013 -        0   52011.506 -        0
+rtREV+I+R4       -25726.579   51613.157 -        0   51625.488 -        0   52015.697 -        0
+rtREV+R5         -25723.967   51609.933 -        0   51622.585 -        0   52017.505 -        0
+rtREV+I+G4       -25748.639   51647.278 -        0   51658.073 -        0   52024.658 -        0
+Blosum62+R4      -25743.336   51644.673 -        0   51656.688 -        0   52042.180 -        0
+Blosum62+I+G4    -25758.732   51667.463 -        0   51678.259 -        0   52044.844 -        0
+Blosum62+I+R4    -25742.561   51645.122 -        0   51657.454 -        0   52047.662 -        0
+Blosum62+R5      -25741.404   51644.808 -        0   51657.460 -        0   52052.379 -        0
+FLU+R5           -25758.315   51678.630 -        0   51691.281 -        0   52086.201 -        0
+FLU+R4           -25769.129   51696.259 -        0   51708.274 -        0   52093.767 -        0
+FLU+I+R4         -25766.272   51692.544 -        0   51704.875 -        0   52095.083 -        0
+FLU+I+G4         -25784.393   51718.786 -        0   51729.581 -        0   52096.166 -        0
+mtMAM+F+R5       -25729.025   51658.049 -        0   51677.642 -        0   52161.223 -        0
+mtMAM+F+I+G4     -25756.322   51700.643 -        0   51717.866 -        0   52173.627 -        0
+mtMAM+F+I+R4     -25740.244   51678.489 -        0   51697.675 -        0   52176.631 -        0
+mtMAM+F+R4       -25748.892   51693.784 -        0   51712.569 -        0   52186.895 -        0
+HIVw+F+I+G4      -25772.512   51733.023 -        0   51750.246 -        0   52206.007 -        0
+HIVw+F+I+R4      -25760.002   51718.004 -        0   51737.190 -        0   52216.147 -        0
+HIVw+F+R5        -25756.935   51713.869 -        0   51733.462 -        0   52217.044 -        0
+HIVw+F+R4        -25764.789   51725.578 -        0   51744.362 -        0   52218.689 -        0
+FLAVI+I+G4       -25943.850   52037.700 -        0   52048.496 -        0   52415.081 -        0
+FLAVI+R5         -25923.458   52008.916 -        0   52021.568 -        0   52416.487 -        0
+FLAVI+I+R4       -25932.531   52025.061 -        0   52037.392 -        0   52427.601 -        0
+FLAVI+R4         -25936.082   52030.165 -        0   52042.180 -        0   52427.672 -        0
+mtART+F+R5       -25930.980   52061.959 -        0   52081.552 -        0   52565.133 -        0
+mtART+F+I+G4     -25965.542   52119.083 -        0   52136.306 -        0   52592.067 -        0
+mtART+F+I+R4     -25951.743   52101.485 -        0   52120.672 -        0   52599.628 -        0
+mtART+F+R4       -25958.829   52113.658 -        0   52132.443 -        0   52606.769 -        0
+LG+I             -26332.135   52812.270 -        0   52822.771 -        0   53184.619 -        0
+HIVw+I+G4        -26494.261   53138.522 -        0   53149.318 -        0   53515.903 -        0
+HIVw+R5          -26474.422   53110.845 -        0   53123.496 -        0   53518.416 -        0
+HIVw+I+R4        -26480.699   53121.399 -        0   53133.730 -        0   53523.938 -        0
+HIVw+R4          -26485.391   53128.781 -        0   53140.797 -        0   53526.289 -        0
+LG               -26566.474   53278.948 -        0   53289.160 -        0   53646.266 -        0
+mtZOA+R5         -26580.918   53323.835 -        0   53336.487 -        0   53731.406 -        0
+mtZOA+I+G4       -26610.929   53371.859 -        0   53382.654 -        0   53749.240 -        0
+mtZOA+R4         -26603.336   53364.671 -        0   53376.686 -        0   53762.179 -        0
+mtZOA+I+R4       -26601.162   53362.324 -        0   53374.655 -        0   53764.863 -        0
+mtMet+R5         -26660.034   53482.068 -        0   53494.719 -        0   53889.639 -        0
+mtMet+I+G4       -26684.742   53519.484 -        0   53530.279 -        0   53896.864 -        0
+mtMet+R4         -26673.682   53505.363 -        0   53517.379 -        0   53902.871 -        0
+mtMet+I+R4       -26672.334   53504.668 -        0   53516.999 -        0   53907.207 -        0
+mtVer+R5         -26747.095   53656.190 -        0   53668.841 -        0   54063.761 -        0
+mtVer+I+G4       -26769.748   53689.496 -        0   53700.292 -        0   54066.877 -        0
+mtVer+R4         -26761.126   53680.252 -        0   53692.267 -        0   54077.759 -        0
+mtVer+I+R4       -26757.890   53675.779 -        0   53688.110 -        0   54078.319 -        0
+mtREV+R5         -26808.064   53778.127 -        0   53790.779 -        0   54185.698 -        0
+mtREV+I+G4       -26831.117   53812.233 -        0   53823.029 -        0   54189.614 -        0
+mtREV+I+R4       -26821.102   53802.204 -        0   53814.535 -        0   54204.743 -        0
+mtREV+R4         -26827.567   53813.134 -        0   53825.150 -        0   54210.642 -        0
+mtInv+R5         -26954.996   54071.992 -        0   54084.644 -        0   54479.563 -        0
+mtInv+I+G4       -26979.035   54108.069 -        0   54118.865 -        0   54485.450 -        0
+mtInv+R4         -26966.846   54091.692 -        0   54103.708 -        0   54489.200 -        0
+mtInv+I+R4       -26965.846   54091.693 -        0   54104.024 -        0   54494.232 -        0
+mtMAM+R5         -27268.584   54699.167 -        0   54711.819 -        0   55106.738 -        0
+mtMAM+I+G4       -27301.082   54752.163 -        0   54762.959 -        0   55129.544 -        0
+mtMAM+I+R4       -27285.797   54731.593 -        0   54743.924 -        0   55134.132 -        0
+mtMAM+R4         -27294.498   54746.997 -        0   54759.012 -        0   55144.504 -        0
+mtART+R5         -27377.813   54917.626 -        0   54930.278 -        0   55325.197 -        0
+mtART+I+G4       -27416.188   54982.375 -        0   54993.171 -        0   55359.756 -        0
+mtART+R4         -27404.495   54966.991 -        0   54979.006 -        0   55364.498 -        0
+mtART+I+R4       -27401.818   54963.636 -        0   54975.968 -        0   55366.176 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: Q.mammal+R4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: FreeRate with 4 categories
+Site proportion and rates:  (0.1468,0.0550) (0.3054,0.3481) (0.4033,1.1036) (0.1445,3.0486)
+
+ Category  Relative_rate  Proportion
+  1         0.0550         0.1468
+  2         0.3481         0.3054
+  3         1.1036         0.4033
+  4         3.0486         0.1445
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -24922.8676 (s.e. 637.1925)
+Unconstrained log-likelihood (without tree): -7701.3152
+Number of free parameters (#branches + #model parameters): 79
+Akaike information criterion (AIC) score: 50003.7353
+Corrected Akaike information criterion (AICc) score: 50015.7505
+Bayesian information criterion (BIC) score: 50401.2428
+
+Total tree length (sum of branch lengths): 22.3455
+Sum of internal branch lengths: 14.3442 (64.1927% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'C.carcharias_LOC121293265_wee1like_protein_kinase_2A' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++----C.carcharias_LOC121293265_wee1like_protein_kinase_2A
+|
+|        +--C.carcharias_wee1_wee1like_protein_kinase_isoform_X1
+|     +--| (73)
+|     |  |  +--X.laevis_wee1.S_wee1like_protein_kinase_1B_isoform_X1
+|     |  +--| (97)
+|     |     |        +--F.catus_WEE1_wee1like_protein_kinase_isoform_X1
+|     |     |     +--| (97)
+|     |     |     |  +--E.caballus_WEE1_wee1like_protein_kinase
+|     |     |  +--| (100)
+|     |     |  |  +--H.sapiens_WEE1_wee1like_protein_kinase_isoform_1
+|     |     +--| (97)
+|     |        |  +--S.townsendi_WEE1_wee1like_protein_kinase
+|     |        +--| (98)
+|     |           |  +--C.mydas_WEE1_wee1like_protein_kinase_isoform_X1
+|     |           +--| (100)
+|     |              +--G.gallus_WEE1_wee1like_protein_kinase_isoform_X1
+|  +--| (89)
+|  |  |     +--S.salar_LOC100380819_wee1like_protein_kinase_isoform_X1
+|  |  |  +--| (100)
+|  |  |  |  +--S.salar_LOC106587548_wee1like_protein_kinase_1A_isoform_X1
+|  |  +--| (99)
+|  |     |  +--D.rerio_wee1_wee1like_protein_kinase
+|  |     +--| (96)
+|  |        |     +--S.salar_LOC106561062_wee1like_protein_kinase_1A
+|  |        |  +--| (100)
+|  |        |  |  +--S.salar_LOC106584610_wee1like_protein_kinase_1A
+|  |        +--| (98)
+|  |           |  +--G.aculeatus_LOC120812640_wee1like_protein_kinase
+|  |           +--| (100)
+|  |              +--G.aculeatus_wee1_wee1like_protein_kinase
++--| (65)
+|  |                                                +--C.mydas_PKMYT1_membraneassociated_tyrosine_and_threoninespecific_
+|  |                                             +--| (84)
+|  |                                             |  +---S.townsendi_PKMYT1_membraneassociated_tyrosine_and_threoninespeci
+|  |                                          +--| (36)
+|  |                                          |  |       +--X.laevis_pkmyt1.S_membraneassociated_tyrosine_and_threoninespecif
+|  |                                          |  |  +----| (100)
+|  |                                          |  |  |    +--X.laevis_pkmyt1.L_membraneassociated_tyrosine_and_threoninespecif
+|  |                                          |  +--| (51)
+|  |                                          |     +----C.carcharias_pkmyt1_membraneassociated_tyrosine_and_threoninespec
+|  |                                       +--| (67)
+|  |                                       |  |        +--F.catus_PKMYT1_membraneassociated_tyrosine_and_threoninespecific_
+|  |                                       |  |     +--| (84)
+|  |                                       |  |     |  +--E.caballus_PKMYT1_membraneassociated_tyrosine_and_threoninespecif
+|  |                                       |  +-----| (100)
+|  |                                       |        +--H.sapiens_PKMYT1_membraneassociated_tyrosine_and_threoninespecifi
+|  +---------------------------------------| (100)
+|                                          |         +------D.rerio_pkmyt1_membraneassociated_tyrosine_and_threoninespecific_
+|                                          |      +--| (97)
+|                                          |      |  +--S.salar_pkmyt1_membraneassociated_tyrosine_and_threoninespecific_
+|                                          +------| (100)
+|                                                 +--G.aculeatus_pkmyt1_membraneassociated_tyrosine_and_threoninespeci
+|
+|       +--D.rerio_wee2_wee1like_protein_kinase_2_isoform_2
+|  +----| (97)
+|  |    |  +--G.aculeatus_wee2_wee1like_protein_kinase_2_isoform_X2
+|  |    +--| (95)
+|  |       +--S.salar_wee2_wee1like_protein_kinase_2
++--| (62)
+   |     +--X.laevis_wee2.S_wee1like_protein_kinase_2B
+   |  +--| (100)
+   |  |  +--X.laevis_wee2.L_wee1like_protein_kinase_2A
+   +--| (89)
+      |          +--H.sapiens_WEE2_wee1like_protein_kinase_2
+      |       +--| (95)
+      |       |  +--E.caballus_WEE2_wee1like_protein_kinase_2
+      |  +----| (100)
+      |  |    +--F.catus_WEE2_wee1like_protein_kinase_2_isoform_X1
+      +--| (98)
+         |  +--S.townsendi_WEE2_wee1like_protein_kinase_2
+         +--| (99)
+            |  +--C.mydas_WEE2_wee1like_protein_kinase_2_isoform_X3
+            +--| (68)
+               +--G.gallus_WEE2_wee1like_protein_kinase_2
+
+Tree in newick format:
+
+(C.carcharias_LOC121293265_wee1like_protein_kinase_2A:0.7630471299,(((C.carcharias_wee1_wee1like_protein_kinase_isoform_X1:0.3667299862,(X.laevis_wee1.S_wee1like_protein_kinase_1B_isoform_X1:0.2507261542,(((F.catus_WEE1_wee1like_protein_kinase_isoform_X1:0.0444419309,E.caballus_WEE1_wee1like_protein_kinase:0.0297092611)97:0.0075513344,H.sapiens_WEE1_wee1like_protein_kinase_isoform_1:0.0187603341)100:0.1516902731,(S.townsendi_WEE1_wee1like_protein_kinase:0.1220158059,(C.mydas_WEE1_wee1like_protein_kinase_isoform_X1:0.0564708071,G.gallus_WEE1_wee1like_protein_kinase_isoform_X1:0.0767475372)100:0.0246594586)98:0.0656728968)97:0.0902837346)97:0.1071994970)73:0.0639626592,((S.salar_LOC100380819_wee1like_protein_kinase_isoform_X1:0.0327210735,S.salar_LOC106587548_wee1like_protein_kinase_1A_isoform_X1:0.0349277180)100:0.2724083360,(D.rerio_wee1_wee1like_protein_kinase:0.1384558980,((S.salar_LOC106561062_wee1like_protein_kinase_1A:0.1822839772,S.salar_LOC106584610_wee1like_protein_kinase_1A:0.0456614216)100:0.0703540711,(G.aculeatus_LOC120812640_wee1like_protein_kinase:0.0406229416,G.aculeatus_wee1_wee1like_protein_kinase:0.0023173493)100:0.1329413989)98:0.0616621205)96:0.0502049081)99:0.2042921236)89:0.2210410355,((((C.mydas_PKMYT1_membraneassociated_tyrosine_and_threoninespecific_:0.2243839986,S.townsendi_PKMYT1_membraneassociated_tyrosine_and_threoninespeci:0.5658504036)84:0.2863644413,((X.laevis_pkmyt1.S_membraneassociated_tyrosine_and_threoninespecif:0.0592965338,X.laevis_pkmyt1.L_membraneassociated_tyrosine_and_threoninespecif:0.0339282625)100:0.7915515055,C.carcharias_pkmyt1_membraneassociated_tyrosine_and_threoninespec:0.7813415934)51:0.2008102498)36:0.2349853072,((F.catus_PKMYT1_membraneassociated_tyrosine_and_threoninespecific_:0.2939116672,E.caballus_PKMYT1_membraneassociated_tyrosine_and_threoninespecif:0.0597030166)84:0.0328447764,H.sapiens_PKMYT1_membraneassociated_tyrosine_and_threoninespecifi:0.0431251601)100:0.8318224744)67:0.3307241014,((D.rerio_pkmyt1_membraneassociated_tyrosine_and_threoninespecific_:1.0079075641,S.salar_pkmyt1_membraneassociated_tyrosine_and_threoninespecific_:0.2110925712)97:0.1476080419,G.aculeatus_pkmyt1_membraneassociated_tyrosine_and_threoninespeci:0.3308819269)100:1.0207425290)100:5.6148782260)65:0.4780216591,((D.rerio_wee2_wee1like_protein_kinase_2_isoform_2:0.2696145615,(G.aculeatus_wee2_wee1like_protein_kinase_2_isoform_X2:0.4449757108,S.salar_wee2_wee1like_protein_kinase_2:0.2436513550)95:0.0959698457)97:0.7248547846,((X.laevis_wee2.S_wee1like_protein_kinase_2B:0.0849839250,X.laevis_wee2.L_wee1like_protein_kinase_2A:0.0282888200)100:0.4589661796,(((H.sapiens_WEE2_wee1like_protein_kinase_2:0.2021639596,E.caballus_WEE2_wee1like_protein_kinase_2:0.0875158157)95:0.0442245115,F.catus_WEE2_wee1like_protein_kinase_2_isoform_X1:0.1012585025)100:0.7274095655,(S.townsendi_WEE2_wee1like_protein_kinase_2:0.2845134902,(C.mydas_WEE2_wee1like_protein_kinase_2_isoform_X3:0.1167770078,G.gallus_WEE2_wee1like_protein_kinase_2:0.3205314429)68:0.0504139834)99:0.1454414253)98:0.2146099843)89:0.1771644045)62:0.2108766974);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -24922.867929
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++----C.carcharias_LOC121293265_wee1like_protein_kinase_2A
+|
+|        +--C.carcharias_wee1_wee1like_protein_kinase_isoform_X1
+|     +--| (73)
+|     |  |  +--X.laevis_wee1.S_wee1like_protein_kinase_1B_isoform_X1
+|     |  +--| (97)
+|     |     |        +--F.catus_WEE1_wee1like_protein_kinase_isoform_X1
+|     |     |     +--| (97)
+|     |     |     |  +--E.caballus_WEE1_wee1like_protein_kinase
+|     |     |  +--| (100)
+|     |     |  |  +--H.sapiens_WEE1_wee1like_protein_kinase_isoform_1
+|     |     +--| (97)
+|     |        |  +--S.townsendi_WEE1_wee1like_protein_kinase
+|     |        +--| (98)
+|     |           |  +--C.mydas_WEE1_wee1like_protein_kinase_isoform_X1
+|     |           +--| (100)
+|     |              +--G.gallus_WEE1_wee1like_protein_kinase_isoform_X1
+|  +--| (89)
+|  |  |     +--S.salar_LOC100380819_wee1like_protein_kinase_isoform_X1
+|  |  |  +--| (100)
+|  |  |  |  +--S.salar_LOC106587548_wee1like_protein_kinase_1A_isoform_X1
+|  |  +--| (99)
+|  |     |  +--D.rerio_wee1_wee1like_protein_kinase
+|  |     +--| (96)
+|  |        |     +--S.salar_LOC106561062_wee1like_protein_kinase_1A
+|  |        |  +--| (100)
+|  |        |  |  +--S.salar_LOC106584610_wee1like_protein_kinase_1A
+|  |        +--| (98)
+|  |           |  +--G.aculeatus_LOC120812640_wee1like_protein_kinase
+|  |           +--| (100)
+|  |              +--G.aculeatus_wee1_wee1like_protein_kinase
++--| (65)
+|  |                                                +--C.mydas_PKMYT1_membraneassociated_tyrosine_and_threoninespecific_
+|  |                                             +--| (84)
+|  |                                             |  +---S.townsendi_PKMYT1_membraneassociated_tyrosine_and_threoninespeci
+|  |                                          +--| (36)
+|  |                                          |  |       +--X.laevis_pkmyt1.S_membraneassociated_tyrosine_and_threoninespecif
+|  |                                          |  |  +----| (100)
+|  |                                          |  |  |    +--X.laevis_pkmyt1.L_membraneassociated_tyrosine_and_threoninespecif
+|  |                                          |  +--| (51)
+|  |                                          |     +----C.carcharias_pkmyt1_membraneassociated_tyrosine_and_threoninespec
+|  |                                       +--| (67)
+|  |                                       |  |        +--F.catus_PKMYT1_membraneassociated_tyrosine_and_threoninespecific_
+|  |                                       |  |     +--| (84)
+|  |                                       |  |     |  +--E.caballus_PKMYT1_membraneassociated_tyrosine_and_threoninespecif
+|  |                                       |  +-----| (100)
+|  |                                       |        +--H.sapiens_PKMYT1_membraneassociated_tyrosine_and_threoninespecifi
+|  +---------------------------------------| (100)
+|                                          |         +------D.rerio_pkmyt1_membraneassociated_tyrosine_and_threoninespecific_
+|                                          |      +--| (97)
+|                                          |      |  +--S.salar_pkmyt1_membraneassociated_tyrosine_and_threoninespecific_
+|                                          +------| (100)
+|                                                 +--G.aculeatus_pkmyt1_membraneassociated_tyrosine_and_threoninespeci
+|
+|       +--D.rerio_wee2_wee1like_protein_kinase_2_isoform_2
+|  +----| (97)
+|  |    |  +--G.aculeatus_wee2_wee1like_protein_kinase_2_isoform_X2
+|  |    +--| (95)
+|  |       +--S.salar_wee2_wee1like_protein_kinase_2
++--| (62)
+   |     +--X.laevis_wee2.S_wee1like_protein_kinase_2B
+   |  +--| (100)
+   |  |  +--X.laevis_wee2.L_wee1like_protein_kinase_2A
+   +--| (89)
+      |          +--H.sapiens_WEE2_wee1like_protein_kinase_2
+      |       +--| (95)
+      |       |  +--E.caballus_WEE2_wee1like_protein_kinase_2
+      |  +----| (100)
+      |  |    +--F.catus_WEE2_wee1like_protein_kinase_2_isoform_X1
+      +--| (98)
+         |  +--S.townsendi_WEE2_wee1like_protein_kinase_2
+         +--| (99)
+            |  +--C.mydas_WEE2_wee1like_protein_kinase_2_isoform_X3
+            +--| (68)
+               +--G.gallus_WEE2_wee1like_protein_kinase_2
+
+
+Consensus tree in newick format: 
+
+(C.carcharias_LOC121293265_wee1like_protein_kinase_2A:0.7625996780,(((C.carcharias_wee1_wee1like_protein_kinase_isoform_X1:0.3662810289,(X.laevis_wee1.S_wee1like_protein_kinase_1B_isoform_X1:0.2504105610,(((F.catus_WEE1_wee1like_protein_kinase_isoform_X1:0.0443911276,E.caballus_WEE1_wee1like_protein_kinase:0.0296749327)97:0.0075479978,H.sapiens_WEE1_wee1like_protein_kinase_isoform_1:0.0187358860)100:0.1515141518,(S.townsendi_WEE1_wee1like_protein_kinase:0.1218763659,(C.mydas_WEE1_wee1like_protein_kinase_isoform_X1:0.0564132800,G.gallus_WEE1_wee1like_protein_kinase_isoform_X1:0.0766590409)100:0.0246291454)98:0.0656069594)97:0.0902270095)97:0.1071217612)73:0.0639789282,((S.salar_LOC100380819_wee1like_protein_kinase_isoform_X1:0.0326865783,S.salar_LOC106587548_wee1like_protein_kinase_1A_isoform_X1:0.0348931079)100:0.2720940058,(D.rerio_wee1_wee1like_protein_kinase:0.1383096386,((S.salar_LOC106561062_wee1like_protein_kinase_1A:0.1820854245,S.salar_LOC106584610_wee1like_protein_kinase_1A:0.0456120617)100:0.0702917795,(G.aculeatus_LOC120812640_wee1like_protein_kinase:0.0405938608,G.aculeatus_wee1_wee1like_protein_kinase:0.0023083760)100:0.1328072479)98:0.0616068468)96:0.0501643213)99:0.2039723070)89:0.2289105108,((((C.mydas_PKMYT1_membraneassociated_tyrosine_and_threoninespecific_:0.2243360093,S.townsendi_PKMYT1_membraneassociated_tyrosine_and_threoninespeci:0.5651753657)84:0.2860793861,((X.laevis_pkmyt1.S_membraneassociated_tyrosine_and_threoninespecif:0.0592760324,X.laevis_pkmyt1.L_membraneassociated_tyrosine_and_threoninespecif:0.0338846220)100:0.7907597331,C.carcharias_pkmyt1_membraneassociated_tyrosine_and_threoninespec:0.7806365540)51:0.2007712796)36:0.2349385123,((F.catus_PKMYT1_membraneassociated_tyrosine_and_threoninespecific_:0.2935634209,E.caballus_PKMYT1_membraneassociated_tyrosine_and_threoninespecif:0.0596266005)84:0.0328326203,H.sapiens_PKMYT1_membraneassociated_tyrosine_and_threoninespecifi:0.0430654866)100:0.8308525079)67:0.3288437624,((D.rerio_pkmyt1_membraneassociated_tyrosine_and_threoninespecific_:1.0066679228,S.salar_pkmyt1_membraneassociated_tyrosine_and_threoninespecific_:0.2108434403)97:0.1474740763,G.aculeatus_pkmyt1_membraneassociated_tyrosine_and_threoninespeci:0.3305702828)100:1.0215501258)100:5.6058758208)65:0.4703432347,((D.rerio_wee2_wee1like_protein_kinase_2_isoform_2:0.2694696149,(G.aculeatus_wee2_wee1like_protein_kinase_2_isoform_X2:0.4446326401,S.salar_wee2_wee1like_protein_kinase_2:0.2434246624)95:0.0958952045)97:0.7242408607,((X.laevis_wee2.S_wee1like_protein_kinase_2B:0.0849419161,X.laevis_wee2.L_wee1like_protein_kinase_2A:0.0282552564)100:0.4586695978,(((H.sapiens_WEE2_wee1like_protein_kinase_2:0.2020169265,E.caballus_WEE2_wee1like_protein_kinase_2:0.0874518470)95:0.0441885033,F.catus_WEE2_wee1like_protein_kinase_2_isoform_X1:0.1012243941)100:0.7269223349,(S.townsendi_WEE2_wee1like_protein_kinase_2:0.2843660286,(C.mydas_WEE2_wee1like_protein_kinase_2_isoform_X3:0.1167358579,G.gallus_WEE2_wee1like_protein_kinase_2:0.3203174012)68:0.0503916561)99:0.1453343101)98:0.2145197654)89:0.1771280511)62:0.2105069932);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/bio312-user/lab05-s3-jmim/Mygene/Mygene.homologsf.al.fas.treefile -m "Q.mammal+R4{0.146753,0.0550108,0.305439,0.348103,0.40332,1.10364,0.144487,3.04859}" --length 1132
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/bio312-user/lab05-s3-jmim/Mygene/Mygene.homologsf.al.fas --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/bio312-user/lab05-s3-jmim/Mygene/Mygene.homologsf.al.fas --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Sep 26 18:42:57 2024
+Total CPU time used: 1624.626426 seconds (0h:27m:4s)
+Total wall-clock time used: 821.9350235 seconds (0h:13m:41s)
+
