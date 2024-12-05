@@ -33,7 +33,7 @@ bash
 ```
 cat proteomes/*.faa > allprotein.fas
 ```
-It concatenates all protein sequence files into a single file called allprotein.fas 
+It concatenates all protein sequence files into a single file called allprotein.fas which was provided by Dr. Rest
 
 
 Download Query Sequence
